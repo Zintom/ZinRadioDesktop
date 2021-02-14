@@ -10,6 +10,9 @@ namespace Zin_Radio
     {
         public const string WebsiteHost = "http://www.zinstorm.com";
 
+        public const string StationListUrl = "https://raw.githubusercontent.com/Zintom/ZinRadioDesktop/master/Database/stations_v2.txt";
+        public const string StationListVersionUrl = "https://raw.githubusercontent.com/Zintom/ZinRadioDesktop/master/Database/stations_v2_version.txt";
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

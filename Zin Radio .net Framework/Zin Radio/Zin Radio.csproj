@@ -68,6 +68,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NetworkHelper.cs" />
     <Compile Include="Others\RadioAnimator.cs">
       <SubType>Component</SubType>
     </Compile>

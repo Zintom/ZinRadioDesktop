@@ -1,0 +1,486 @@
+Slager FM",https://slagerfm.netregator.hu:7813/slagerfm128.mp3",Magyar, 128kbps",t
+Slager FM HQ",https://slagerfm.netregator.hu:7813/slagerfm320.mp3",Magyar, 320kbps",f
+RTI Offshore",https://s28.myradiostream.com/18084/;",Retro",f
+Lazer 558",http://listen.radionomy.com/laser558alleuroperadio?type=.mp3",Retro - All Europe Radio",t
+UpdateFitness Radio",https://radio.update-fitness.ch/update",Magyar - Off Air (Not working)",f
+24/7 Dance Mix",http://zinstorm.com/zinradio/custom/zindance.php",Dance Remix 24/7",t
+Retro Radio High",http://stream1.retroradio.hu/high.mp3",Magyar - Retro Tracks 256kbps",f
+Retro Radio",http://stream1.retroradio.hu/mid.mp3",Magyar - Retro Tracks 128kbps",t
+Helikon Radio",http://stream5.radio1.hu/mid.mp3",Magyar - Dance, Drum & Bass",f
+Jazz FM",https://stream-al.planetradio.co.uk/jazzhigh.aac?direct=true",Listen in colour - Jazz, Blues, Soul",f
+Kerrang! Radio",https://stream-al.planetradio.co.uk/kerrang.aac",UK National - Modern Rock, Metal",f
+Kiss",https://stream-kiss.planetradio.co.uk/kissnational.aac?direct=true",UK National - Dance, R&B, Hip Hop",f
+Kisstory",https://stream-kiss.planetradio.co.uk/kisstory.aac?direct=true",UK National - Old Skool, Dance Anthems",f
+Magic",https://stream-mz.planetradio.co.uk/magicnational.aac?direct=true",UK National - Soft Rock",f
+Metro 1 Radio",http://icy-e-bz-06-cr.sharp-stream.com:8000/metro.mp3",National - Pop, A.C.",f
+Part FM",http://87.229.53.9:9000/;stream.mp3",Decommissioned, see Next FM",f
+Next FM",https://stream.nextfm.hu/radio/8000/nextfmhu.mp3",The new generation of radio - Magyar",t
+Pirate FM East",http://str1.sad.ukrd.com:80/pirate-east",UK National - Pop, A.C",f
+The Hits Radio",http://icy-e-bl-08-boh.sharp-stream.com:8000/hits.mp3",UK National - Pop, Modern",f
+Demon FM",http://live.demonfm.co.uk:8000/demon320",Leicester - Community radio",f
+Classic FM",http://media-the.musicradio.com:80/ClassicFMMP3",London - Classical",f
+Bartok Radio",http://stream002.radio.hu/mr3.mp3?1480776714876.mp3",Magyar - Classical, Ebu",f
+Petofi Radio",http://mr-stream.mediaconnect.hu/4738/mr2.mp3",Magyar - Pop, Modern",t
+Kossuth Radio",http://mr-stream.mediaconnect.hu/4736/mr1.mp3",Magyar - Not Applicable",f
+Radio Egy",http://stream4.radio1.hu/mid.mp3",Magyar - Modern, Pop",t
+Scala Radio",https://stream-mz.planetradio.co.uk/scalahigh.aac?direct=true",UK National - Classical Music for Modern Life",f
+West FM",https://stream-mz.planetradio.co.uk/westfm.aac?direct=true",Hot AC",f
+Radio Star Country",http://94.23.62.189:5412",Ireland - Gospel & Country",f
+Bob's Ska Radio",http://51.255.235.165:5528/stream",Non-stop Ska, Reggae, Rocksteady, 2Tone and Punk",f
+BBC Radio 1",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",National - Top 40/Dance",f
+BBC Radio 1 Xtra",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p",National - Urban/RnB/HipHop",f
+BBC Radio 2",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p",National - Adult Contemporary",f
+BBC Radio 3",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p",National - Classical",f
+BBC Radio 4",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p",National - News/Feature programming",f
+BBC Radio 4 LW",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4lw_mf_p",National - News/Feature programming",f
+BBC Radio 4 Extra",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4extra_mf_p",National - Comedy/Drama/Features",f
+BBC Radio 5 Live",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p",National - News/Talk/Sport",f
+BBC Radio 5 Live Sports Extra",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5extra_mf_p",National - Sport",f
+BBC Radio 6 Music",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p",National - Adult Alternative",f
+Capital FM London",http://media-the.musicradio.com:80/CapitalMP3",London - Top 40",t
+Capital XTRA",http://media-the.musicradio.com:80/CapitalXTRANationalMP3",London - RnB/HipHop",f
+Capital XTRA Reloaded",https://media-ssl.musicradio.com/CapitalXTRAReloaded",London - RnB/HipHop",f
+Heart 106.2",http://media-the.musicradio.com:80/HeartLondonMP3",London - Adult Contemporary",f
+Heart 90's",https://media-ssl.musicradio.com/Heart90s",UK National - 90's tracks",f
+Heart 80's",https://media-ssl.musicradio.com/Heart80s",UK National - 80's tracks",f
+Heart 70's",https://media-ssl.musicradio.com/Heart70s",UK National - 70's tracks",f
+Heart Dance",https://media-ssl.musicradio.com/HeartDance",UK National - Dance Tracks",f
+BBC Asian Network",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p",Birmingham - Asian programming",f
+BBC World Service",http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",London - International news/features",f
+BBC Radio Berkshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrberk_mf_p?s=1477777143&e=1477791543&h=79e634574503e6c955b379753a48b649",Reading - Local service",f
+BBC Radio Bristol",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrbris_mf_p?s=1477777143&e=1477791543&h=db98a02cfe142408c761a22c37310244",Bristol - Local service",f
+BBC Radio Cambridgeshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcambs_mf_p?s=1477776899&e=1477791299&h=fcb2e3ef94d09bd8b7c328e1a39f6e60",Cambridge - Local service",f
+BBC Radio Cornwall",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcorn_mf_p?s=1477776899&e=1477791299&h=d69e8d6cab71ea6345ca0599f8d96d81",Truro - Local service",f
+BBC Coventry and Warwickshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwmcandw_mf_p?s=1477777143&e=1477791543&h=4d6e06907f870a6c9cc4ba2ba6835415",Coventry - Local service",f
+BBC Radio Cumbria",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcumbria_mf_p?s=1477776908&e=1477791308&h=a2452e727db647917db77f6fd109b3af",Carlisle - Local service",f
+BBC Radio Derby",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrderby_mf_p?s=1477777019&e=1477791419&h=5efdf3b17204c94b5b6e061f6f1fdf7b",Derby - Local service",f
+BBC Radio Devon",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrdevon_mf_p?s=1477776946&e=1477791346&h=fe1d2d25dfdb955f6e67233e185143de",Plymouth - Local service",f
+BBC Essex ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lressex_mf_p?s=1477777144&e=1477791544&h=5b87500faa6253835d73b1d25835e33f",Chelmsford - Local service",f
+BBC Radio Gloucestershire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrgloucs_mf_p?s=1477776946&e=1477791346&h=81090e51f5209c8a8682e7ce11cc96a9",Gloucester - Local service",f
+BBC Radio Guernsey",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrguern_mf_p?s=1477776900&e=1477791300&h=0a49eb6929f55824a043f0c2de0af136",St Sampson's - Local service",f
+BBC Hereford/Worcester",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrhandw_mf_p?s=1477776900&e=1477791300&h=32b158e693b0ba504cb913b67c80bb6a",Worcester - Local service",f
+BBC Radio Humberside",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrhumber_mf_p?s=1477776908&e=1477791308&h=68e25e51555acd17bdd83009eb7d891b",Hull - Local service",f
+BBC Radio Jersey",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrjersey_mf_p?s=1477776900&e=1477791300&h=873296f151f1e12f25550a607a0266d9",St.Helier - Local service",f
+BBC Radio Kent",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrkent_mf_p?s=1477777144&e=1477791544&h=2b63d712b327bb79353e6b8dd510986f",Maidstone - Local service",f
+BBC Radio Lancashire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrlancs_mf_p?s=1477777144&e=1477791544&h=0367f4192eb9902b3664621e57151e4a",Blackburn - Local service",f
+BBC Radio Leeds",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrleeds_mf_p?s=1477777144&e=1477791544&h=b21892ef7727e4f6bee06db90788845b",Leeds - Local service",f
+BBC Radio Leicester",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrleics_mf_p?s=1477777144&e=1477791544&h=ddcb93b789d599d8cd06641c7d116af1",Leicester - Local service",f
+BBC Radio Lincolnshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrlincs_mf_p?s=1477776947&e=1477791347&h=fc9e14e978423e04d299f17b7fdc17dc",Lincoln - Local service",f
+BBC London 94.9",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrldn_mf_p?s=1477777145&e=1477791545&h=390c24727cded37609ca05b6c3022f1f",London - Local news/features",f
+BBC Radio Manchester",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrmanc_mf_p?s=1477777145&e=1477791545&h=62934985fa022b8d137799872a080a84",Manchester - Local service",f
+BBC Radio Merseyside",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrmersey_mf_p?s=1477777145&e=1477791545&h=08e539f82e1356d10585a396f0c8ec28",Liverpool - Local service",f
+BBC Newcastle",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnewc_mf_p?s=1477777145&e=1477791545&h=e0fd751e69ce9a3de379e51c66a99a52",Newcastle - Local service",f
+BBC Radio Norfolk",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnorfolk_mf_p?s=1477777021&e=1477791421&h=1853701ec5c73362af6d706e33d06291",Norwich - Local service",f
+BBC Radio Northampton",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnthhnts_mf_p?s=1477777145&e=1477791545&h=82bdda793a73579bb5a19dcde92c6a89",Northampton - Local service",f
+BBC Radio Nottingham",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnotts_mf_p?s=1477777145&e=1477791545&h=faeba23107830a621df14ba73759cf16",Nottingham - Local service",f
+BBC Radio Oxford",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lroxford_mf_p?s=1477777145&e=1477791545&h=084ccbe45f2f076e46d014cb1c7fddc6",Oxford - Local service",f
+BBC Radio Sheffield",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsheff_mf_p?s=1477776948&e=1477791348&h=55f4a563f808a82164955ddc50ab0c4d",Sheffield - Local service",f
+BBC Radio Shropshire ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrshrops_mf_p?s=1477777146&e=1477791546&h=006f8cad936eeed6a011f65dae8dbdb4",Shrewsbury - Local service",f
+BBC Radio Solent",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsolent_mf_p?s=1477777146&e=1477791546&h=6ee05defc57340a68bd92a79739dceb7",Southampton - Local service",f
+BBC Somerset",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsomer_mf_p?s=1477776948&e=1477791348&h=97fc29c4038b9bf06313727548127aad",Taunton - Local service",f
+BBC Radio Stoke",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrstoke_mf_p?s=1477777146&e=1477791546&h=d93c8f588ea2a9bdf16e77eaa31838ef",Stoke - Local service",f
+BBC Radio Suffolk ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsuffolk_mf_p?s=1477777022&e=1477791422&h=e57314eb6e59a08c8f130ab22e5168eb",Ipswich - Local service",f
+BBC Surrey",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsurrey_mf_p?s=1477777146&e=1477791546&h=33ae002f4a76ffc286347bc01514fd60",Guildford - Local service",f
+BBC Sussex",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsussex_mf_p?s=1477776949&e=1477791349&h=7815cdf85bd64a133e320eaf0604c5e6",Brighton - Local service",f
+BBC Tees",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrtees_mf_p?s=1477777146&e=1477791546&h=19167fb76ab34fa10b60ae3d1a46f6f6",Middlesbrough - Local service",f
+BBC Three Counties Radio",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lr3cr_mf_p?s=1477777146&e=1477791546&h=66afdf27d830d6d31e3efb041783783d",Luton - Local service",f
+BBC Wiltshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwilts_mf_p?s=1477777146&e=1477791546&h=40c2319b151e6c73c184672a56547ebf",Swindon - Local service",f
+BBC WM 95.6",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwm_mf_p?s=1477776903&e=1477791303&h=9b057df1a15c0f006f1b846392b42366",Birmingham - Local service",f
+BBC Radio York ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lryork_mf_p?s=1477776949&e=1477791349&h=ea0b3cf1c1909dc2bf39a84aaf8ee53e",York - Local service",f
+BBC Radio Cymru",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_cymru_mf_p?s=1477776949&e=1477791349&h=419b28ab4da51b1d5a555cc21926f19e",Cardiff - Welsh programming",f
+BBC Radio Scotland",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_scotlandfm_mf_p",Glasgow - Regional programming",f
+BBC Radio nan Gaidheal",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_nangaidheal_mf_p",Stornoway - Gaelic service",f
+BBC Radio Ulster",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_ulster_mf_p?s=1477777147&e=1477791547&h=584994d697a593cf2a22585f0e0f3b05",Belfast - Regional programming",f
+BBC Radio Foyle",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_foyle_mf_p?s=1477777147&e=1477791547&h=14d6478019bb52ebba0285f2f3a6710d",Londonderry - Local service",f
+BBC Radio Wales",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_walesmw_mf_p",Cardiff - Regional programming",f
+1 Brighton FM",http://listen.1brightonfm.co.uk:10000/obfm_mp3",Brighton - Varied music programmes",f
+2BR",https://media-ssl.musicradio.com/CapitalPreston",Burnley - Current/Classic Hits",f
+3FM",http://icy-e-01-cr.sharp-stream.com:80/3fmhigh.mp3",Douglas - Adult Contemporary",f
+3TFM ",http://149.255.59.162:8042/",Saltcoats - Community radio",f
+10Radio ",http://live.canstream.co.uk:8000/10radio.mp3",Wiveliscombe - Community radio",f
+Abbey104",http://5.152.208.98:8030/",Sherborne - Community radio",f
+Absolute Radio",http://mp3-ar-32.timlradio.co.uk/",London - Hot Adult Contemporary",f
+107.8 Academy FM ",http://37.187.93.104:8097/stream",Ramsgate - Community radio",f
+105.9 Academy FM ",http://s3.xrad.io:8080/",Folkestone - Community radio",f
+Ahomka Radio",http://stream2.radiomonitor.com:80/DiamondRadio",London - Ghanaian Programming",f
+Alive Radio ",http://217.28.20.20:8013/",Dumfries - Community radio",f
+ALL FM ",http://icecast.commedia.org.uk:8000/allfm.mp3",Longsight - Community radio",f
+Amber Sound",http://92.27.136.118:8005/",Ripley - Community radio",f
+Angel Radio",http://s6.viastreaming.net:7030/",Havant - Community radio",f
+Angel Radio",http://s3.viastreaming.net:7150/",Newport (IOW) - Community radio",f
+Antenna Radio",http://stream1.myradioapps.com:80/antenna_radio_mp3",Manchester - Adult contemporary",f
+97.3 Apple FM",http://radio.canstream.co.uk:8031/live.mp3",Taunton - Community radio",f
+The Arrow",http://media-the.musicradio.com:80/ArrowMP3",Digital Network - Adult Rock",f
+96.7 Ashbourne Radio",http://listen2.onmyradio.net:8014/",Ashbourne - Current/Classic Hits",f
+Asian Sound Radio ",http://38.96.148.254:9000/;",Manchester - Asian programmes",f
+Asian Star 101.6 FM ",http://icecast.commedia.org.uk:8000/asianstar.mp3",Slough - Asian community radio",f
+Awaaz Radio",http://streaming.m3x.co.uk:8012/stream",High Wycombe - Asian Community radio",f
+Awaz FM ",http://icecast.commedia.org.uk:8000/awaz.mp3",Glasgow - Asian community radio",f
+Banbury Sound",http://icy-e-05-gos.sharp-stream.com:80/banburysound.mp3",Banbury - Current/Classic Hits",f
+BANG Radio ",http://icecast.commedia.org.uk:8000/bangradio.mp3",Harlesden - RnB/HipHop",f
+The Bay",http://shoutcast2.tidyhosts.com:9006/",Lancaster - Current/Classic Hits",f
+Bay FM",http://mirror.viewcam.co.uk:80/",Exmouth - Community radio",f
+BCfm",http://cp6.serverse.com:7017/live.mp3",Bristol - Community radio",f
+BCB 106.6FM",http://icecast.commedia.org.uk:8000/bcb.mp3",Bradford - Community Radio",f
+107 The Bee",http://str1.sad.ukrd.com:80/thebee",Blackburn - Current/Classic Hits",f
+The Bee",http://str1.sad.ukrd.com:80/thebee-pr",Preston - Current/Classic Hits",f
+Beverley FM",http://s17609301.onlinehome-server.info:8002/live",Beverley - Community radio",f
+BFBS UK",http://icy-e-05-gos.sharp-stream.com:80/ssvcbfbs1.mp3",London - British Forces Pop/News",f
+Big City Radio ",http://icecast.easystream.co.uk:8000/bigcityradio",Aston - Community radio",f
+Big L 1395",http://eastlondonradio.com:8100/biglh.mp3",Digital Network - Adult Contemporary / Oldies",f
+Biggles FM",http://212.74.123.36:8000/bigglesfm.mp3",Biggleswade - Community radio",f
+105.9 Bishop FM",http://uk2-pn.webcast-server.net:8434/",Bishop Auckland - Community radio",f
+Black Country Radio",http://stream1.myradioapps.com:80/thebridge",Stourbridge - Community radio",f
+Black Diamond FM ",http://icecast.easystream.co.uk:8000/blackdiamondfm",Mid Lothian - Community radio",f
+Bob fm",http://ic01.mediaondemand.net:8000/106JackFM",Hertford - Variety rock",f
+Bolton FM",http://icecast.commedia.org.uk:8000/boltonfm.mp3",Bolton - Community radio",f
+Branch FM",http://usa2-vn.mixstream.net:8890",Dewsbury - Community Christian radio",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Andover-128",Andover - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Basingstoke-128",Basingstoke - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Bath-128",Bath - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Somerset-128",Bridgewater - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Bristol-128",Bristol - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/KestrelFM-South-128",Haslemere - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Warminster-128",Warminster - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Newbury-128",Newbury - Soft Adult Contemporary",f
+The Breeze ",http://stream2.radiomonitor.com:80/Midwest-Shaftesbury-128",Shaftesbury - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Southampton-128",Southampton - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Portsmouth-128",Portsmouth - Soft Adult Contemporary",f
+The Breeze ",http://stream2.radiomonitor.com:80/Breeze-Yeovil-128",Yeovil - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Breeze-Cheltenham-128",Cheltenham - Soft Adult Contemporary",f
+The Breeze",http://stream2.radiomonitor.com:80/Palm-128",Torbay - Soft Adult Contemporary",f
+Bridge FM",http://icy-e-05-gos.sharp-stream.com:80/tcbridge.mp3",Bridgend - Top 40",f
+BRfm",http://icecast.commedia.org.uk:8000/brfm.mp3",Brynmawr - Community radio",f
+BRFM",http://live.brfm.net:8000/BrfmMP3",Isle of Sheppey - Community radio",f
+Bro Radio",http://csmedia.serverroom.us:8720/",Barry - Community radio",f
+Bute FM ",http://live.canstream.co.uk:8000/bute.mp3",Rothesay - Community radio",f
+Calon FM",http://149.255.59.164:8035/stream",Wrexham - Community radio",f
+Cam FM",http://stream.camfm.co.uk/camfm",Cambridge - Student radio",f
+Cambridge 105",http://stream.cambridge105.fm:443/105-128s-mp3",Cambridge - Community radio",f
+Canalside Community Radio",http://195.10.228.6:8035/canal.mp3",Bollington - Community radio",f
+Capital FM Birmingham",http://media-the.musicradio.com:80/CapitalBirminghamMP3",Birmingham - Top 40",f
+Capital FM Central Scotland",http://media-the.musicradio.com:80/CapitalEdinburghMP3",Edinburgh - Top 40",f
+Capital FM Central Scotland",http://media-the.musicradio.com:80/CapitalGlasgowMP3",Glasgow - Top 40",f
+Capital FM East Midlands",http://media-the.musicradio.com:80/CapitalDerbyshireMP3",Derby - Top 40",f
+Capital FM East Midlands",http://media-the.musicradio.com:80/CapitalLeicestershireMP3",Leicester - Top 40",f
+Capital FM East Midlands",http://media-the.musicradio.com:80/CapitalNottinghamshireMP3",Nottingham - Top 40",f
+Capital FM Liverpool",http://media-the.musicradio.com:80/CapitalLiverpoolMP3",Liverpool - Top 40",f
+Capital FM Manchester",http://media-the.musicradio.com:80/CapitalManchesterMP3",Manchester - Top 40",f
+Capital FM South Coast",http://media-the.musicradio.com:80/CapitalSouthCoastMP3",Southampton - Top 40",f
+Capital FM South Wales",http://media-the.musicradio.com:80/CapitalSouthWalesMP3",Cardiff - Top 40",f
+Capital FM North East England",http://media-the.musicradio.com:80/CapitalTeessideMP3",Middlesbrough - Top 40",f
+Capital FM North East England",http://media-the.musicradio.com:80/CapitalTyneWearMP3",Newcastle - Top 40",f
+Capital FM Yorkshire",http://media-the.musicradio.com:80/CapitalYorkshireEastMP3",Hull - Top 40",f
+Capital FM Yorkshire",http://media-the.musicradio.com:80/CapitalYorkshireSouthWestMP3",Leeds - Top 40",f
+Capital FM Anglesey & Gwynedd",http://media-the.musicradio.com:80/CapitalCymruMP3",Bangor - Top 40",f
+98.8 Castle FM",http://s7.myradiostream.com:10126/",Edinburgh - Local service",f
+Castledown Radio",http://radio.canstream.co.uk:8008/live.mp3",Tidworth - Community radio",f
+The Cat",http://5.63.151.52:8066/live",Crewe - Community radio",f
+CDNX - The Camden Xperience",http://svr1.msmn.co:8130/",London - Indie/Urban/Rock",f
+Celtic Music Radio",http://stream.celticmusicradio.net:8000/celticmusic.mp3",Glasgow - Celtic music",f
+Central FM ",http://s4.xrad.io:8008/",Falkirk - Current/Classic Hits",f
+Channel 103FM",http://sharpflow.sharp-stream.com:8000/tindlechannel103.mp3",Jersey - Top 40",f
+Cheesy FM",https://listen-cheesyfm.sharp-stream.com/cheesyfm.mp3",The Home of Cheesy Pop Music",f
+Chill",http://media-the.musicradio.com:80/ChillMP3",Digital Network - Chillout / lounge music",f
+Colourful Radio",http://streaming.colourfulradio.com:8000/colourful",Digital network - Talk/Soul/Afro-Caribbean issues",f
+Compass FM",http://lincs.planetwideradio.com:8005/compassfmaac",Grimsby - Current/classic hits",f
+Connect FM",http://ar.canstream.co.uk:8004/live.mp3",Kettering - Adult Contemporary",f
+106.8 Connect FM",http://ar.canstream.co.uk:8005/live.mp3",Peterborough - Adult Contemporary",f
+Corby Radio",http://mp3.corbyradio.com:8080/",Corby - Community radio",f
+Core Radio",http://198.105.214.140:9305/Live",Cambridge - Student radio",f
+Crescent Radio",http://icecast.commedia.org.uk:8000/crescent.mp3",Rochdale - Asian/Muslim Community radio",f
+Cross Rhythms City Radio",http://stream.crossrhythms.co.uk:80/city/hq.mp3",Stoke-on-Trent - Christian Community radio",f
+Crystal FM",http://stream1.myradioapps.com:80/crystal_fm",Penicuik - Community radio",f
+CSR",http://stream.csrfm.com:80/stream",Canterbury - Student community radio",f
+Cuillin FM",http://radio.canstream.co.uk:8023/live.mp3",Isle of Skye - Local service",f
+Dawn FM",http://icecast.commedia.org.uk:8000/radiodawn.mp3",Nottingham - Muslim Community radio",f
+Dearne FM",http://lincs.planetwideradio.com:8010/dearnefmaac",Barnsley - Current/classic hits",f
+Dee 106.3",http://icy-e-05-gos.sharp-stream.com:80/tcdee.mp3",Chester - Current/Classic Hits",f
+Desi Radio",http://icy-e-05-gos.sharp-stream.com:80/desiradio.aac",Southall - Asian Community radio",f
+Deveron FM",http://deveronfm.serverroom.net:4326/",Banff - Community radio",f
+Diverse FM",http://live.canstream.co.uk:8000/diversefm.mp3",Luton - Community radio",f
+Drive 105",http://icecast.easystream.co.uk:8000/drive105",Londonderry - Community radio",f
+Drystone Radio",http://icecast.commedia.org.uk:8000/drystone.mp3",South Craven - Community radio",f
+Dunoon Community Radio",http://stream2.hippynet.co.uk:8001/dunoon.mp3",Dunoon - Community radio",f
+96.4 Eagle Radio",http://str1.sad.ukrd.com:80/eagle",Guildford - Top 40",f
+Eagle 3",http://str1.sad.ukrd.com:80/eaglethree",Guildford - Top 40",f
+Eden FM",http://eu4.fastcast4u.com:5564/stream",Penrith - Community radio",f
+Energy FM",http://91.121.78.191:8096/stream",Douglas - Top 40",f
+Erewash Sound",http://icecast.commedia.org.uk:8000/erewash",Erewash - Community radio",f
+Express FM",http://london-ics01.broadcast.meteoric.net:80/expressfm.mp3",Portsmouth - Community radio",f
+103 The Eye",http://icecast.commedia.org.uk:8000/theeyefm.mp3",Melton Mowbray - Community radio",f
+Fantasy Radio",http://server.fantasyradio.co.uk:8300/",Devizes - Community radio",f
+Felixstowe Radio",http://uk4-vn.mixstream.net:8032/",Felixstowe - Community radio",f
+Fire 107.6",http://stream4.radiomonitor.com:80/Fire-128",Bournemouth - Top 40/Dance",f
+Forest FM",http://195.10.228.4:8000/forestfm.mp3",Verwood - Community Radio",f
+French Radio London ",http://audio1.ipercast.net:8000/frenchradiolondon.com/hi/mp3",London - French language programmes",f
+Frome FM",http://icecast.bargus.co.uk:8001/fromefm.mp3",Frome - Community radio",f
+Fun Kids",http://icy-e-01-cr.sharp-stream.com/funkids.mp3",Digital Network - Childrens programmes",f
+Future Radio",http://radio.canstream.co.uk:8007/live.mp3",Norwich - Community radio",f
+Gaydio ",http://listen.gaydio.co.uk:8000/gaydio64.mp3",Manchester - Pop, dance, gay",f
+GFM Glastonbury",http://live.canstream.co.uk:8000/glastonburyfm.mp3",Glastonbury - Community radio",f
+GFM Gloucester",http://icecast.commedia.org.uk:8000/gloucesterfm.mp3",Gloucester - Community Radio",f
+Gold",http://media-the.musicradio.com:80/GoldMP3Low",London - Oldies",f
+Gravity FM ",http://stream1.myradioapps.com:80/gravity_fm",Grantham - Community radio",f
+GTFM",http://radio.canstream.co.uk:8012/live.mp3",Pontypridd - Community radio",f
+Hayes FM",http://live.canstream.co.uk:8000/hayes.mp3",Hayes - Community radio",f
+HCRfm",http://stream.hcrfm.co.uk:8098/",Huntingdon - Community radio",f
+Heart FM 100.7",http://media-the.musicradio.com:80/HeartWestMidsMP3",Birmingham - Adult Contemporary",f
+Heart (Norwich)",http://media-the.musicradio.com:80/HeartNorfolkMP3",Norwich - Adult Contemporary",f
+Heart (Bedford)",http://ice-the.musicradio.com/HeartBedfordshireMP3",Bedford - Adult Contemporary",f
+Heart (Dunstable)",http://media-the.musicradio.com:80/HeartBedsBucksHertsMP3",Dunstable - Adult Contemporary",f
+Heart (Peterborough)",http://media-the.musicradio.com:80/HeartPeterboroughMP3",Peterborough - Adult Contemporary",f
+Heart (Northampton)",http://media-the.musicradio.com:80/HeartNorthamptonshireMP3",Northampton - Adult Contemporary",f
+Heart (Cambridge)",http://media-the.musicradio.com:80/HeartCambridgeMP3",Cambridge - Adult Contemporary",f
+Heart (Colchester)",http://media-the.musicradio.com:80/HeartColchesterMP3",Colchester - Adult Contemporary",f
+Heart (Ipswich)",http://media-the.musicradio.com:80/HeartSuffolkMP3",Ipswich - Adult Contemporary",f
+Heart (Milton Keynes)",http://media-the.musicradio.com:80/HeartMiltonKeynesMP3",Milton Keynes - Adult Contemporary",f
+Heart (Oxfordshire)",http://media-the.musicradio.com:80/HeartOxfordshireMP3",Oxford - Adult Contemporary",f
+Heart (Bath)",http://media-the.musicradio.com:80/HeartBathMP3",Bath - Adult Contemporary",f
+Heart (Bristol)",http://media-the.musicradio.com:80/HeartBristolMP3",Bristol - Adult Contemporary",f
+Heart (Wiltshire)",http://media-the.musicradio.com:80/HeartWiltshireMP3",Swindon - Adult Contemporary",f
+Heart (Exeter)",http://media-the.musicradio.com:80/HeartEastDevonMP3",Exeter - Adult Contemporary",f
+Heart (Torbay)",http://media-the.musicradio.com:80/HeartTorbayMP3",Torquay - Adult Contemporary",f
+Heart (North Devon)",http://media-the.musicradio.com:80/HeartNorthDevonMP3",Barnstaple - Adult Contemporary",f
+Heart (Somerset)",http://media-the.musicradio.com:80/HeartSomersetMP3",Taunton - Adult Contemporary",f
+Heart (Plymouth)",http://media-the.musicradio.com:80/HeartPlymouthMP3",Plymouth - Adult Contemporary",f
+Heart (Gloucestershire)",http://media-the.musicradio.com:80/HeartGloucestershireMP3",Gloucester - Adult Contemporary",f
+Heart (South Devon) ",http://media-the.musicradio.com:80/HeartSouthHamsMP3",Kingsbridge - Adult Contemporary",f
+Heart (Berkshire)",http://media-the.musicradio.com:80/HeartBerkshireMP3",Reading - Adult Contemporary",f
+Heart (Cheshire and North East Wales)",http://media-the.musicradio.com:80/HeartWrexhamMP3",Wrexham - Adult Contemporary",f
+Heart Cornwall",http://media-the.musicradio.com:80/HeartCornwallMP3",Cornwall - Adult Contemporary",f
+Heart (Dorset)",http://media-the.musicradio.com:80/HeartDorsetMP3",Bournemouth - Adult Contemporary",f
+Heart (Essex)",http://media-the.musicradio.com:80/HeartEssexMP3",Chelmsford - Adult Contemporary",f
+Heart (Hampshire)",http://media-the.musicradio.com:80/HeartHampshireMP3",Fareham - Adult Contemporary",f
+Heart (Kent)",http://media-the.musicradio.com:80/HeartKentMP3",Maidstone - Adult Contemporary",t
+Heart (North Wales Coast)",http://media-the.musicradio.com:80/HeartWalesCoastMP3",Bangor - Adult Contemporary",f
+Heart (Sussex)",http://media-the.musicradio.com:80/HeartSussexMP3",Brighton - Adult Contemporary",f
+Heart (Wirral)",http://media-the.musicradio.com:80/HeartWirralMP3",Birkenhead - Adult Contemporary",f
+Heart (Hertfordshire)",http://media-the.musicradio.com:80/HeartWatfordMP3",Watford - Adult Contemporary",f
+Heart (Sussex & Surrey)",http://media-the.musicradio.com:80/HeartCrawleyMP3",Crawley - Adult Contemporary",f
+Heartland FM",http://rs9.radiostreamer.com:8185/",Pitlochry - Local service",f
+Hermitage FM",http://live.canstream.co.uk:8000/hermitage.mp3",Coalville - Community radio",f
+102.3 HFM",http://icy-e-05-gos.sharp-stream.com:80/harboroughfm.mp3",Market Harborough - Community radio",f
+High Peak Radio",http://s4.xrad.io:8020/",Buxton - Current/classic hits",f
+Hillz FM",http://195.10.228.4:8000/watch",Coventry - Community radio",f
+Hope FM ",http://icy-e-05-gos.sharp-stream.com:80/hopefm.mp3",Bournemouth - Community Christian radio",f
+Hot Radio",http://195.110.184.41:7002/stream",Poole - Community radio",f
+ICR",http://95.142.158.120:8018",Ipswich - Community radio",f
+Imagine FM",http://stream4.radiomonitor.com:80/Imagine",Stockport - Current/Classic Hits",f
+Insanity Radio",http://stream.insanityradio.com:8000/insanity192.mp3",Egham - Community radio",f
+Insight Radio",http://185.14.85.162:8020/http://185.14.85.162:8020",Glasgow - Service for blind/partially sighted",f
+Inspiration FM ",http://live.canstream.co.uk:8000/inspirationfm.mp3",Northampton - Multicultural/Community radio",f
+Island FM",http://sharpflow.sharp-stream.com:8000/tindleisland.mp3",Guernsey - Current/Classic Hits",f
+Isle of Wight Radio",http://listen.onmyradio.net:8018/",Newport - Adult Contemporary",f
+Isles FM ",http://hebrides.tv:8000/islesfm",Stornoway - Music/Local news",f
+Juice 107.2",http://icy-e-05-gos.sharp-stream.com:80/juice1072.mp3",Brighton - Dance/RnB",f
+K107",http://s11.myradiostream.com:9020/",Kirkcaldy - Community radio",f
+Kane FM ",http://91.121.122.94:8081/",Guildford - Community radio",f
+KCFM",http://lincs.planetwideradio.com:8015/kcfmaac",Hull - Current/classic hits",f
+KCC Live",http://195.194.74.201:8000/stream/1/",Knowsley - Community radio",f
+Keith Community Radio",http://icecast.commedia.org.uk:8000/keithcommunityradio.mp3",Keith - Community radio",f
+97.5 Kemet FM",http://109.169.26.139:8120/stream",Nottingham - Afro Caribbean Community radio",f
+Kingdom FM ",http://stream8.considerit.co.uk:80/kingdomfm64.mp3",Fife - Current/Classic hits",f
+Kinnaird Radio",http://icecast.commedia.org.uk:8000/kinnaird.mp3",Fraserburgh - Community radio",f
+KL.FM 96.7",http://str1.sad.ukrd.com:80/klfm",Kings Lynn - Current/Classic hits",f
+Kmfm",http://icy-e-05-gos.sharp-stream.com:80/kmfmextra.mp3",Kent - Current/Classic Hits",f
+Lakeland Radio",http://shoutcast2.tidyhosts.com:9012/",Kendal - Current/Classic Hits",f
+LBC",https://media-ssl.musicradio.com/LBCUK",UK National - News/Talk",f
+LBC News",https://media-ssl.musicradio.com/LBCNewsUK",UK National - News",f
+LCR",http://158.125.14.12:8080/lcrhigh",Loughborough - Student radio",f
+Leisure FM ",http://lfmradio.countybroadband.net:8002/",Braintree - Community radio",f
+Lincs FM ",http://lincs.planetwideradio.com:8000/lincsfmaac",Lincoln - Current/Classic Hits",f
+Lionheart Radio ",http://icecast.commedia.org.uk:8000/lionheart.mp3",Alnwick - Community radio",f
+Lisburn's 98FM",http://radio.canstream.co.uk:8050/live.mp3",Lisburn - Community radio",f
+London Greek Radio",http://live3.istoikona.net:8203/stream",London - Greek programming",f
+London Turkish Radio",http://51.255.83.127:2171/Live",London - Turkish programming",f
+Love 80's Manchester",http://rss-streaming.co.uk:8042/mp3",Manchester - 80s music",f
+Love 80's Liverpool",http://rss-streaming.co.uk:8062/mp3",Liverpool - 80s music",t
+LSRfm",http://51.255.83.127:6648/Live",Leeds - Student radio",f
+Manchester Business Radio",http://mp3streaming.planetwideradio.com:9060/niocom",Manchester - Business, Talk",f
+Mansfield 103.2",http://icy-e-01-cr.sharp-stream.com:80/mansfield103.mp3",Mansfield - Current/Classic Hits",f
+Manx Radio FM",http://icy-e-05-gos.sharp-stream.com:80/manxradiofm.aac",Isle of Man - Adult Contemporary",f
+Manx Radio AM",http://icy-e-05-gos.sharp-stream.com:80/manxradioam.aac",Isle of Man - Adult Contemporary",f
+Marlow FM",http://audio.marlowfm.co.uk:8022/",Marlow - Community radio",f
+Max",http://mp3streaming.planetwideradio.com:9230/2zy",Manchester - 80s music",f
+Mearns FM ",http://217.28.20.20:8002/stream",Stonehaven - Community radio",f
+Meridian FM ",http://radio.canstream.co.uk:8063/live.mp3",East Grinstead - Community radio",f
+Minster FM",http://str1.sad.ukrd.com:80/minster",York - Current/Classic Hits",f
+Mix 96",http://str1.sad.ukrd.com:80/mix96",Aylesbury - Adult Contemporary",f
+MKFM",http://50.7.70.66:8753/",Milton Keynes - Top 40",f
+Moorlands Radio ",http://stream2.hippynet.co.uk:8067/",Leek - Community radio",f
+More Radio Eastbourne ",http://s4.xrad.io:8090/",Eastbourne - Adult contemporay",f
+More Radio Mid Sussex ",http://s4.xrad.io:8094/",Burgess Hill - Adult contemporay",f
+More Radio Hastings ",http://s4.xrad.io:8092/",Hastings - Adult contemporay",f
+More Radio Worthing ",http://s4.xrad.io:8090/",Worthing - Worthing",f
+MÃ´nFM",http://173.192.105.231:2696/MonFM.co.uk",Llangefni - Community radio",f
+Nation Radio",http://icy-e-01-cr.sharp-stream.com:80/tcnation.mp3",Cardiff - Alternative/Indie",f
+Nation Hits",http://icy-e-05-gos.sharp-stream.com:80/tcbay.mp3",Swansea - Adult Contemporary",f
+Nevis Radio",http://149.255.59.162:8014/",Fort William - Local service",f
+NonStopPlay.com",http://stream.nonstopplay.co.uk/nsp-128k-mp3",Internet only - Dance",f
+North Manchester FM",http://live.canstream.co.uk:8000/manchesterfm.mp3",Manchester - Community radio",f
+Nova FM",http://aries.streaming.zfast.co.uk:8178/",Newport - Community radio",f
+NuSound Radio",http://icecast.commedia.org.uk:8000/nusound.mp3",Forest Gate - Community radio",f
+Oak FM",http://icy-e-05-gos.sharp-stream.com:80/oakfm.mp3",Loughborough - Current/Classic Hits",f
+Oban FM",http://icy-e-05-gos.sharp-stream.com:80/obanfm.mp3",Oban - Diverse, community radio",f
+Oldham Community Radio",http://listen.oldhamcommunityradio.com:8000/oldham.mp3",Oldham - Community radio",f
+Original 106",http://sharpflow.sharp-stream.com:8000/original106.mp3",Aberdeen - Adult Alternative",f
+Peak FM",http://stream2.radiomonitor.com:80/Peak",Chesterfield - Current/Classic Hits",f
+Penwith Radio",http://50.7.77.178:8414/live",Penzance - Community radio",f
+Phoenix FM",http://51.255.83.127:1907/Live",Brentwood - Community radio",f
+Phonic FM",http://109.200.2.91:8004/",Exeter - Community radio",f
+Pirate FM",http://str1.sad.ukrd.com:80/pirate",Redruth - Top 40",f
+Planet Rock",https://stream-mz.planetradio.co.uk/planetrock.aac",Digital Network - Classic Rock",f
+Point FM",http://stream.pointfm.co.uk:1031/",Rhyl - Community radio",f
+Polskie Radio Londyn",http://149.202.75.191:8128/",London - Top 40/Dance for Polish <br />community",f
+Premier Christian Radio",http://icy-e-03-boh.sharp-stream.com:80/premierlondon.aac",London - Christian",f
+Premier Gospel",http://icy-e-03-boh.sharp-stream.com:80/premiernational.aac",London - Gospel",f
+Preston FM ",http://149.255.59.162:8044/stream",Preston - Community radio",f
+Pulse 1",http://stream2.radiomonitor.com:80/Pulse",Bradford - Top 40",f
+Pulse 2",http://stream2.radiomonitor.com:80/Pulse-Gold",Bradford - Classic Hits",f
+Pulse Summer",http://stream2.radiomonitor.com:80/PulseSummer",Bradford - Classic Hits",f
+Pulse Radio",http://stream1.myradioapps.com:80/pulse",Cheddar - Community radio",f
+Pure Radio ",http://icecast.commedia.org.uk:8000/pure.mp3",Stockport - Community radio",f
+Q101",http://109.169.26.139:8390/stream",Omagh - Current/Classic Hits",f
+QUAY-FM",http://quayfm.ci-servers.gg:1071/quay-fm",Alderney - Community radio",f
+Queen's Radio",http://quis.qub.ac.uk:8080/QRLQ",Belfast - Student radio",f
+Radio Asian Fever",http://icecast.commedia.org.uk:8000/asianfever.mp3",Leeds - Asian Community radio",f
+Radio Cabin",http://50.7.129.122:8200/stream",Herne Bay - Community radio<br /> (Eves./Weekends only)",f
+Radio Carmarthenshire",http://icy-e-05-gos.sharp-stream.com:80/tccarmarthenshire.aac",Llanelli - Top 40",f
+Radio Caroline",http://sc6.radiocaroline.net:8040/",Digital Network - Classic Rock",f
+Radio Ceredigion",http://icy-e-01-cr.sharp-stream.com:80/tcceredigion.aac",Aberystwyth - Local service (English/Welsh)",f
+Radio Essex ",http://ar.canstream.co.uk:8003/live.mp3",Southend - Adult Contemporary",f
+Radio Exe ",http://192.99.20.78:8058/live",Exeter - Current/classic hits",f
+Radio Faza",http://livecast.radiofaza.org.uk:12164/",Nottingham - Asian Community radio",f
+Radio Hartlepool",http://arctic.thebmwz3.co.uk:8000/hartlepool-mp3",Hartlepool - Community radio",f
+Radio Ikhlas",http://live.canstream.co.uk:8000/radioikhlas.mp3",Derby - Asian Community radio",f
+Radio Jackie",http://radiojackie.com:22614/",Tolworth - Classic Hits",f
+Radio Jcom",http://icecast.commedia.org.uk:8000/radiojcom.mp3",Leeds - Jewish Community radio",f
+Radio Newark",http://rss-streaming.co.uk:8002/mp3",Newark - Community radio",f
+Radio Pembrokeshire",http://icy-e-05-gos.sharp-stream.com:80/tcpembrokeshire.aac",Tenby - Adult Contemporary",f
+Radio Scilly",http://radio.canstream.co.uk:8040/live.mp3",Isles of Scilly - Community radio",f
+Radio St Austell Bay",http://www.rsab-server.org:8000/live.mp3",St Austell - Community radio",f
+Radio Sunlight",http://icecast.commedia.org.uk:8000/sunlight.mp3",Gillingham - Community radio",f
+Radio Teesdale",http://icecast.commedia.org.uk:8000/radioteesdale.mp3",Barnard Castle - Community radio",f
+Radio Tircoed",http://78.129.143.9:8060/",Swansea - Community radio",f
+Radio Verulam",http://stream1.myradioapps.com:80/radioverulam",St.Albans - Community radio",f
+Radio Yorkshire",http://stream1.myradioapps.com:80/radio_yorkshire",Leeds - Adult Contemporary/Sport",f
+Radio Warrington",http://stream.dnsgb.net:8002/",Warrington - Community radio",f
+Radio Wave 96.5",http://stream2.radiomonitor.com:80/Wave-Blackpool",Blackpool - Adult Contemporary",f
+Radio Winchcombe",http://195.10.228.6:8014/winchcombe",Winchcombe - Community radio",f
+Radio X 104.9",http://media-the.musicradio.com:80/RadioXLondonMP3",London - Alternative/New music",f
+Radio X 97.7 ",http://media-the.musicradio.com:80/RadioXManchesterMP3",Manchester - Alternative/New music",f
+Radio XL",http://sc18.strictlyhosting.co.uk:8000/",Birmingham - Asian programming",f
+RaidiÃ³ FÃ¡ilte",http://icecast.commedia.org.uk:8000/raidiofailte.mp3",Belfast - Community radio (Irish)",f
+Rainbow Radio",http://usa7.fastcast4u.com:6282/",London - Ghanaian Programming",f
+RaW 1251AM",http://streams.radio.warwick.ac.uk/raw-high.mp3",Warwick - Student radio",f
+Reading 107fm",http://stream1.blueboxstreaming.co.uk:8250/live",Reading - Top 40",f
+Real Radio XS ",http://media-the.musicradio.com:80/RealXSManchesterMP3",Manchester - Classic Rock",f
+Redroad FM ",http://149.202.90.221:8084/stream",Rotherham - Community radio",f
+Resonance 104.4fm",http://stream.resonance.fm:8000/resonance",London - Community Radio/Arts",f
+Revival FM",http://rs4.radiostreamer.com:8470/",Cumbernauld - Christian community radio",f
+Ridings FM",http://lincs.planetwideradio.com:8020/ridingsfmaac",Wakefield - Current/classic hits",f
+Rother FM",http://lincs.planetwideradio.com:8025/rotherfmaac",Rotherham - Current/classic hits",f
+107.1 Rugby FM",http://icy-e-05-gos.sharp-stream.com:80/1071rugbyfm.mp3",Rugby - Current/classic hits",f
+Rutland Radio ",http://lincs.planetwideradio.com:8030/rutlandradioaac",Oakham - Current/Classic hits",f
+RWSfm ",http://soho.wavestreamer.com:5587/Live",Bury St.Edmunds - Community radio",f
+Sabras Radio",http://radio.canstream.co.uk:8025/live.mp3",Leicester - Asian programming",f
+Saint FM",http://stream.saintfm.co.uk:8134/",Burnham on Crouch - Community radio",f
+Salford City Radio",http://live.canstream.co.uk:8000/scr",Salford - Community radio",f
+Sam FM",https://stream3.celador.co.uk/sam-hants-128.aac",National - Variety rock",f
+Scarlet FM",http://icy-e-05-gos.sharp-stream.com:80/tcscarlet.aac",Llanelli - Current/classic hits",f
+Scratch Radio",http://live.scratchradio.co.uk:8000/WebPlayer",Birmingham - Student radio",f
+Seahaven FM",http://radio.canstream.co.uk:8027/live.mp3",Seaford - Community radio",f
+Sedgemoor FM",http://s3.xrad.io:8040/",Bridgwater - Community radio",f
+SFM",http://87.117.193.43:8060/",Sittingbourne - Community radio",f
+Sheffield Live!",http://icecast.commedia.org.uk:8000/shefflive.mp3",Sheffield - Community radio",f
+shmuFM",http://stream.shmu.org.uk:8000/shmufm_high.mp3",Aberdeen - Community radio",f
+SIBC",http://tx9.zetcast.net:8100/stream2",Lerwick - Local service",f
+Signal 1",http://stream2.radiomonitor.com:80/Signal1",Stoke - Top 40",f
+Signal 2",http://stream2.radiomonitor.com:80/Signal2",Stoke - Adult Contemporary",f
+Signal 107 (Wolverhampton)",http://gbradio.cdn.tibus.net/WLVWlv",Wolverhampton - Current/Classic Hits",f
+Signal 107 (Shrewsbury)",http://gbradio.cdn.tibus.net/WLVShrw",Shrewsbury - Current/Classic Hits",f
+Signal 107 (Telford)",http://gbradio.cdn.tibus.net/WLVTel",Telford - Current/Classic Hits",f
+Signal 107 (Kidderminster)",http://gbradio.cdn.tibus.net/WLVKidd",Kidderminster - Current/Classic Hits",f
+Silk 106.9 ",http://icy-e-05-gos.sharp-stream.com:80/tcsilk.mp3",Macclesfield - Current/Classic Hits",f
+Sine FM",http://icecast.redemptionmedia.co.uk:8000/sinefmstream.mp3",Doncaster - Community radio",f
+Siren FM ",http://radio.canstream.co.uk:8045/live.mp3",Lincoln - Community radio",f
+Skyline 102.5 FM",http://icecast.commedia.org.uk:8000/skyline.mp3",Hedge End - Community radio",f
+Smile Sussex",http://icy-e-05-gos.sharp-stream.com:80/smilesussex.mp3",Brighton - Easy Listening",f
+Smooth Radio North West",http://media-the.musicradio.com:80/SmoothNorthWestMP3",Manchester - Easy Listening",f
+Smooth Radio Scotland",http://media-the.musicradio.com:80/SmoothScotlandMP3",Glasgow - Easy Listening",f
+Smooth Radio West Midlands",http://media-the.musicradio.com:80/SmoothWestMidsMP3",Birmingham - Easy Listening",f
+Smooth Radio East Midlands",http://media-the.musicradio.com:80/SmoothEastMidsMP3",Nottingham - Easy Listening",f
+Smooth Radio London",http://media-the.musicradio.com:80/SmoothLondonMP3",London - Easy Listening",f
+Smooth Radio North East",http://media-the.musicradio.com:80/SmoothNorthEastNMP3",Newcastle - Easy Listening",f
+Smooth Extra",http://media-the.musicradio.com:80/SmoothExtraMP3",London - Adult Contemporary",f
+Solar Radio",http://icy-e-01-cr.sharp-stream.com:80/solar32.mp3",London - Soul/Jazz",f
+Somer Valley FM",http://icecast.bargus.co.uk:8002/svalley.mp3",Midsomer Norton - Community radio",f
+Soundart Radio",http://icecast.commedia.org.uk:8000/soundart.mp3",Dartington - Community radio",f
+The Source FM ",http://live.canstream.co.uk:8000/sourcefm.mp3",Falmouth - Community radio",f
+Spectrum Radio AM ",http://icy-e-05-gos.sharp-stream.com:80/spectrum1.mp3",London - Multiultural",f
+Spectrum Radio DAB ",http://icy-e-05-gos.sharp-stream.com:80/spectrum2.mp3",London - Multiultural",f
+Spectrum Radio Sky Digital ",http://icy-e-05-gos.sharp-stream.com:80/spectrum3.mp3",London - Multicultural",f
+Speysound Radio",http://live.canstream.co.uk:8000/speysound.mp3",Aviemore - Community radio",f
+102 Spire FM",http://str1.sad.ukrd.com:80/spire",Salisbury - Current/Classic Hits",f
+Spirit FM",http://str1.sad.ukrd.com:80/spirit",Chichester - Current/Classic Hits",f
+Stafford FM",http://rss-streaming.co.uk:8004/stream",Stafford - Community radio",f
+Star Radio",http://str1.sad.ukrd.com:80/star-ne",Darlington - Current/Classic Hits",f
+Star 107",http://str1.sad.ukrd.com:80/starcambs",Cambridge - Current/classic hits",f
+Starpoint Radio",http://stream2.hippynet.co.uk:8084/stream.mp3",Birmingham - Soul music",f
+97.2 Stray FM",http://str1.sad.ukrd.com:80/stray",Harrogate - Current/Classic Hits",f
+Stray FM Dales",http://str1.sad.ukrd.com:80/stray-dales",Skipton - Current/Classic Hits",f
+Streetlife FM ",http://icecast.commedia.org.uk:8000/streetlifefm.mp3",Leyton - Community radio",f
+Sun FM ",http://str1.sad.ukrd.com:80/sun-fm",Sunderland - Current/Classic Hits",f
+Sunrise Radio",http://icy-e-01-cr.sharp-stream.com:80/sunrise.mp3",Bradford - Asian programming",f
+Sunshine 855",http://icecast.easystream.co.uk:8000/sunshine855",Ludlow - Classic Hits",f
+Sunshine Radio",http://icecast.easystream.co.uk:8000/herefordFM",Hereford - Classic Hits",f
+Susy Radio ",http://media.susyradio.com:8770/",Redhill - Community radio",f
+Swansea Sound",http://stream2.radiomonitor.com:80/SwanseaSound",Swansea - Adult Contemporary",f
+Swindon 105.5 ",http://46.28.49.164:7510/stream",Swindon - Community radio",f
+Takeover Radio",http://icecast.commedia.org.uk:8000/takeover.mp3",Leicester - Youth Community radio",f
+Tameside Radio",http://nicole.srv.insidetameside.com:8000/stream", Ashton-under-Lyne - Community Radio",f
+TCR fm",http://streaming.tcrfm.co.uk:8080/live",Tamworth - Community radio",f
+Tempo FM ",http://stream.dnsgb.net:8040/",Wetherby - Community radio",f
+Tone FM",http://mp3streaming.planetwideradio.com:9130/tonefm",Taunton - Community radio",f
+101-102 Touch FM",http://icy-e-05-gos.sharp-stream.com:80/1016touchfm.mp3",Tamworth - Current/Classic Hits",f
+102 Touch FM",http://icy-e-05-gos.sharp-stream.com:80/102touchfm.mp3",Stratford-upon-Avon - Current/Classic Hits",f
+96.2 Touch FM",http://icy-e-05-gos.sharp-stream.com:80/962touchfm.mp3",Coventry - Current/Classic Hits",f
+107.3 Touch FM",http://icy-e-05-gos.sharp-stream.com:80/1073touchfm.mp3",Warwick - Current/Classic Hits",f
+Tower FM",http://stream2.radiomonitor.com:80/Tower",Bolton - Current/Classic Hits",f
+Town 102",http://sharpflow.sharp-stream.com:8000/tindletown102.mp3",Ipswich - Current/Classic Hits",f
+Trax FM",http://lincs.planetwideradio.com:8035/traxfmaac",Doncaster - Current/classic hits",f
+Tudno FM",http://217.28.20.20:8033/",Llandudno - Community radio",f
+Tulip Radio",http://uk3-pn.mixstream.net:8066/",Spalding - Community radio",f
+Two Lochs Radio",http://icecast.commedia.org.uk:8000/twolochs.mp3",Gairloch - Local service",f
+U105 ",http://stream2.radiomonitor.com:80/U105",Belfast - Current/Classic Hits",f
+UCB UK",http://icy-e-05-gos.sharp-stream.com:80/ucbuk.mp3",Digital Network - Christian programming",f
+UCB Bible",http://icy-e-05-gos.sharp-stream.com:80/ucbbible.mp3",Digital Network - Bible readings",f
+UCB Inspirational",http://icy-e-05-gos.sharp-stream.com:80/ucbinspirational.mp3",Digital Network - Inspirational music/worship",f
+UCB Talk",http://icy-e-05-gos.sharp-stream.com:80/ucbgospel.mp3",Digital Network - Gospel",f
+UCB The Word",http://icy-e-05-gos.sharp-stream.com:80/ucbtheword.mp3",Digital Network - Contemporary Christian",f
+Uckfield FM",http://mp3streaming.planetwideradio.com:9165/uckfieldfmmp3",Uckfield - Community radio",f
+Ujima 98 FM",http://radio.canstream.co.uk:8037/live.mp3",Bristol - AfroCaribbean Community radio",f
+Unity FM",http://icecast.commedia.org.uk:8000/unity.mp3",Birmingham - Muslim Community radio",f
+Unity 101",http://icecast.commedia.org.uk:8000/unity24.mp3",Southampton - Community radio",f
+1449 AM URB",http://icecast.urb.bath.ac.uk:8000/urb-low.mp3",Bath - Student Radio",f
+URN",http://posurnl.nottingham.ac.uk:8080/urn_high.mp3",Nottingham - Student radio",f
+Virgin Radio",http://radio.virginradio.co.uk/stream",London - Rock/Pop/Dance",f
+Vixen 101",http://192.99.20.78:8017/",Market Weighton - Community radio",f
+The Voice",http://www.rosi-systems.com:8000/thevoice.mp3",Barnstaple - Community radio",f
+The Wave",http://stream2.radiomonitor.com:80/Wave-Swansea",Swansea - Current/Classic Hits",f
+Wave Summer",http://stream2.radiomonitor.com:80/WaveSummer",Swansea - Classic Hits",f
+Wave 102",http://stream2.radiomonitor.com:80/Wave-Dundee",Dundee - Current/Classic Hits",f
+Waves Radio ",http://stream2.radiomonitor.com:80/WavesRadio",Peterhead - Current/Classic Hits",f
+101.8 WCR FM",http://radio.canstream.co.uk:8016/live.mp3",Wolverhampton - Community radio",f
+Wessex FM",http://str1.sad.ukrd.com:80/wessex",Dorchester - Current/classic hits",f
+Westside 89.6FM",http://radio.canstream.co.uk:8002/live.mp3",Hanwell - Community radio",f
+Wire FM",http://stream2.radiomonitor.com:80/Wire",Warrington - Current/Classic Hits",f
+Wirral Radio ",http://88.208.208.140:8210/",Leasowe - Community radio",f
+Wish FM",http://stream2.radiomonitor.com:80/Wish",Wigan - Current/Classic Hits",f
+Wythenshawe FM ",http://icecast.commedia.org.uk:8000/wfm",Wythenshawe - Community radio",f
+Xpress Radio ",http://stream.suon.cf.ac.uk:8000/xpress",Cardiff - Student radio",f
+Yorkshire Coast Radio ",http://str1.sad.ukrd.com:80/yorkshirecoast",Scarborough - Current/Classic Hits",f
+Yorkshire Coast Radio ",http://str1.sad.ukrd.com:80/yorkshirecoastb",Bridlington - Current/Classic Hits",f
+Yorkshire Coast Radio ",http://str1.sad.ukrd.com:80/yorkshirecoastw",Whitby - Current/Classic Hits",f
+Your Radio",http://icy-e-01-cr.sharp-stream.com:80/yourradio.mp3",Dumbarton - Current/classic hits",f

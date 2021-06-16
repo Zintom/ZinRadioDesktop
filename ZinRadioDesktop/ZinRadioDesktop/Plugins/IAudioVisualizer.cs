@@ -23,16 +23,16 @@ namespace ZinRadioDesktop.Plugins
 
     public static class VisualizerPluginLoader
     {
-        private static readonly string _pluginDirectory = AppDomain.CurrentDomain.BaseDirectory + "\\Plugins";
-
         /// <summary>
         /// Gets all available <see cref="IAudioVisualizer"/>'s available in the <b>Plugins</b> directory.
         /// </summary>
         public static IReadOnlyList<IAudioVisualizer> GetAvailableAudioVisualizers()
         {
+            PluginBase.EnsurePluginDirectoryExists();
+
             List<IAudioVisualizer> plugins = new();
 
-            foreach (string file in Directory.GetFiles(_pluginDirectory))
+            foreach (string file in Directory.GetFiles(PluginBase.PluginDirectory))
             {
                 IAudioVisualizer? plugin = PluginBase.CreateTypeFromDll<IAudioVisualizer>(file);
                 if (plugin != null)

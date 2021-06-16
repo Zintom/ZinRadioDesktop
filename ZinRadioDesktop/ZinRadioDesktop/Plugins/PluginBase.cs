@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Reflection;
 
 namespace ZinRadioDesktop.Plugins
@@ -15,6 +16,21 @@ namespace ZinRadioDesktop.Plugins
 
     public static class PluginBase
     {
+        public static readonly string PluginDirectory = AppDomain.CurrentDomain.BaseDirectory + "\\Plugins";
+
+        /// <summary>
+        /// Creates the <b>Plugins</b> directory if it does not exist already.
+        /// </summary>
+        public static void EnsurePluginDirectoryExists()
+        {
+            if (Directory.Exists(PluginDirectory))
+            {
+                return;
+            }
+
+            Directory.CreateDirectory(PluginDirectory);
+        }
+
         /// <summary>
         /// Locates the first <typeparamref name="T"/> in the given <paramref name="dllFile"/> assembly and instantiates it.
         /// </summary>

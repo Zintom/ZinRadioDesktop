@@ -1,3 +1,4 @@
+talkSport",https://radio.talksport.com/stream",One of the world’s biggest sports radio stations.",f
 Romney Marsh Radio",https://s3.radio.co/s16964bdb4/listen",Local Station for the Romney Marsh",t
 Slager FM",https://slagerfm.netregator.hu:7813/slagerfm128.mp3",Magyar, 128kbps",t
 Slager FM HQ",https://slagerfm.netregator.hu:7813/slagerfm320.mp3",Magyar, 320kbps",f
@@ -28,16 +29,15 @@ Scala Radio",https://stream-mz.planetradio.co.uk/scalahigh.aac?direct=true",UK N
 West FM",https://stream-mz.planetradio.co.uk/westfm.aac?direct=true",Hot AC",f
 Radio Star Country",http://94.23.62.189:5412",Ireland - Gospel & Country",f
 Bob's Ska Radio",http://51.255.235.165:5528/stream",Non-stop Ska, Reggae, Rocksteady, 2Tone and Punk",f
-BBC Radio 1",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",National - Top 40/Dance",f
-BBC Radio 1 Xtra",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p",National - Urban/RnB/HipHop",f
-BBC Radio 2",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p",National - Adult Contemporary",f
-BBC Radio 3",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p",National - Classical",f
-BBC Radio 4",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p",National - News/Feature programming",f
-BBC Radio 4 LW",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4lw_mf_p",National - News/Feature programming",f
-BBC Radio 4 Extra",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4extra_mf_p",National - Comedy/Drama/Features",f
-BBC Radio 5 Live",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p",National - News/Talk/Sport",f
-BBC Radio 5 Live Sports Extra",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5extra_mf_p",National - Sport",f
-BBC Radio 6 Music",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p",National - Adult Alternative",f
+BBC Radio 1",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_one",National - Top 40/Dance",f
+BBC Radio 1 Xtra",https://stream.live.vc.bbcmedia.co.uk/bbc_1xtra",National - Urban/RnB/HipHop/Grime",f
+BBC Radio 2",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_two",National - Adult Contemporary",f
+BBC Radio 3",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_three",National - Classical",f
+BBC Radio 4",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm",National - News/Feature programming",f
+BBC Radio 4 Long Wave",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourlw_online_nonuk",National - News/Feature programming",f
+BBC Radio 4 Extra",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_four_extra",National - Comedy/Drama/Features",f
+BBC Radio 5 Live",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_online_nonuk",National - News/Talk/Sport",f
+BBC Radio 6 Music",https://stream.live.vc.bbcmedia.co.uk/bbc_6music",National - Adult Alternative",f
 Capital FM London",http://media-the.musicradio.com:80/CapitalMP3",London - Top 40",t
 Capital XTRA",http://media-the.musicradio.com:80/CapitalXTRANationalMP3",London - RnB/HipHop",f
 Capital XTRA Reloaded",https://media-ssl.musicradio.com/CapitalXTRAReloaded",London - RnB/HipHop",f

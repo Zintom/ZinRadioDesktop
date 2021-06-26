@@ -64,7 +64,7 @@
             this.ChannelNameArea.Size = new System.Drawing.Size(413, 55);
             this.ChannelNameArea.TabIndex = 5;
             this.ChannelNameArea.TabStop = false;
-            this.ChannelNameArea.Click += new System.EventHandler(this.ChannelNameArea_Click);
+            this.ChannelNameArea.Click += new System.EventHandler(this.ChangeStationDialog);
             // 
             // ChannelNameLabel
             // 
@@ -80,7 +80,7 @@
             this.ChannelNameLabel.Size = new System.Drawing.Size(105, 30);
             this.ChannelNameLabel.TabIndex = 6;
             this.ChannelNameLabel.Text = "No Station";
-            this.ChannelNameLabel.Click += new System.EventHandler(this.ChannelNameLabel_Click);
+            this.ChannelNameLabel.Click += new System.EventHandler(this.ChangeStationDialog);
             // 
             // MainForm
             // 
@@ -97,7 +97,7 @@
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Zin Radio Desktop 2015 (.NET 5)";
+            this.Text = " Zin Radio Desktop 2021 Beta (.NET 5)";
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);

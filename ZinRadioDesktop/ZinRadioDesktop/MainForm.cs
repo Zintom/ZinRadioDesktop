@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -12,16 +14,48 @@ using System.Windows.Forms;
 
 namespace ZinRadioDesktop
 {
-    public partial class MainForm : Form
+    public interface IDisplayCurrentStation
     {
-        public static RadioStation CurrentStation = null;
+        void UpdateCurrentStation(RadioStation station);
+    }
 
-        public static MainForm StaticForm;
+    public interface ILinkWindowHost
+    {
+        /// <summary>
+        /// Whether the host is "linking" to the client windows.
+        /// </summary>
+        bool LinkWindowsOn { get; set; }
+
+        /// <summary>
+        /// The form will move out of the way for the client form to show itself.
+        /// </summary>
+        void MakeWayForClient();
+
+        /// <summary>
+        /// The form will move back to its position before it moved out of the way.
+        /// </summary>
+        void ResumePosition();
+
+        int Left { get; set; }
+        int Top { get; set; }
+        int Height { get; }
+        int Width { get; }
+    }
+
+    public interface ILinkWindowClient
+    {
+        int Left { get; set; }
+        int Top { get; set; }
+        int Height { get; }
+    }
+
+    public partial class MainForm : Form, IDisplayCurrentStation, ILinkWindowHost
+    {
+        private ILinkWindowClient _linkWindowClient;
         public static ChangeStation changeStationScreen;
         public static string Theme { get; set; }
 
-        public bool formClosing = false;
-        public bool linkWindows = false;
+        public bool LinkWindowsOn { get; set; }
 
         public static RadioAnimator RadioStationLogo;
         ZinMenuBarControl MainMenuBarControl;
@@ -32,26 +66,29 @@ namespace ZinRadioDesktop
         public MainForm()
         {
             InitializeComponent();
+            _linkWindowClient = null!;
+
+            SetupMenuStrip();
         }
-        private void MainForm_Load(object sender, EventArgs e)
+
+        private async void MainForm_Load(object sender, EventArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
-            SetupMenuStrip();
             Theme = "Light";
 
-            RadioStationLogo = new RadioAnimator();
+            RadioStationLogo = new RadioAnimator(BackColor);
             RadioStationLogo.Location = new Point(ClientSize.Width / 2 - RadioStationLogo.Width / 2, ClientSize.Height / 2 - RadioStationLogo.Height / 2);
             this.Controls.Add(RadioStationLogo);
 
             // Change Form Icon
             this.Icon = Properties.Resources.radio;
 
-            StaticForm = this;
-
-            changeStationScreen = new ChangeStation();
+            changeStationScreen = await ChangeStation.CreateAsync(this, this);
+            _linkWindowClient = changeStationScreen;
             changeStationScreen.Show(this);
         }
 
+        [MemberNotNull(nameof(MainMenuBarControl))]
         public void SetupMenuStrip()
         {
             MainMenuBarControl = new ZinMenuBarControl();
@@ -61,15 +98,10 @@ namespace ZinRadioDesktop
             this.Controls.Add(MainMenuBarControl);
             ZinMenuButton ZMB = new ZinMenuButton("Change Station", ButtonType.Main, MainMenuBarControl);
             ZinMenuButton ZMB2 = new ZinMenuButton("Exit", ButtonType.Secondary, MainMenuBarControl);
-            ZinMenuBarControl.Items[0].Click += Menu_ChangeStation_Click;
+            ZinMenuBarControl.Items[0].Click += ChangeStationDialog;
             ZinMenuBarControl.Items[1].Click += (o, i) => { Close(); };
 
             MainMenuBarControl.BringToFront();
-        }
-
-        void Menu_ChangeStation_Click(object sender, EventArgs e)
-        {
-            ChangeStationDialog();
         }
 
         // Detect WindowState Change
@@ -163,7 +195,6 @@ namespace ZinRadioDesktop
                 //this.TopMost = true;
 
                 Application.DoEvents();
-                Application.DoEvents();
 
                 while (this.Opacity < 1)
                 {
@@ -179,116 +210,116 @@ namespace ZinRadioDesktop
         //
         private void PlayButton_Click(object sender, EventArgs e)
         {
-            if (WebStreamPlayer.WebAudioPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
-            {
-                WebStreamPlayer.WebAudioPlayer.controls.pause();
+            //if (WebStreamPlayer.WebAudioPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            //{
+            //    WebStreamPlayer.WebAudioPlayer.controls.pause();
 
-                AutoUpdateThemedControls();
-            }
-            else if (WebStreamPlayer.WebAudioPlayer.playState == WMPLib.WMPPlayState.wmppsPaused)
-            {
-                WebStreamPlayer.WebAudioPlayer.controls.play();
+            //    AutoUpdateThemedControls();
+            //}
+            //else if (WebStreamPlayer.WebAudioPlayer.playState == WMPLib.WMPPlayState.wmppsPaused)
+            //{
+            //    WebStreamPlayer.WebAudioPlayer.controls.play();
 
-                AutoUpdateThemedControls();
-            }
+            //    AutoUpdateThemedControls();
+            //}
         }
 
-        public void UpdateTitleText()
+        public void UpdateCurrentStation(RadioStation station)
         {
-            ChannelNameLabel.Text = CurrentStation.Name;
+            UpdateTitleText(station.Name);
+            RadioStationLogo.Start();
+            UpdateThemedControls(true);
+        }
+
+        public void UpdateTitleText(string text)
+        {
+            ChannelNameLabel.Text = text;
             ChannelNameLabel.Left = ChannelNameArea.Width / 2 - ChannelNameLabel.Width / 2;
-        }
-
-        // Change Channel Triggers
-        private void ChangeChannelButton_Click(object sender, EventArgs e)
-        {
-            ChangeStationDialog();
-        }
-        private void ChannelNameLabel_Click(object sender, EventArgs e)
-        {
-            ChangeStationDialog();
-        }
-        private void ChannelNameArea_Click(object sender, EventArgs e)
-        {
-            ChangeStationDialog();
         }
 
         /// <summary>
         /// Displays a Dialog to change the station
         /// </summary>
-        public void ChangeStationDialog()
+        public void ChangeStationDialog(object? sender, EventArgs e)
         {
             //if (changeStationScreen.Opacity < 1 && !changeStationScreen.Visible)
             //{
-                changeStationScreen.Top = this.Top + (this.Height / 2) - (changeStationScreen.Height / 2);
-                changeStationScreen.Left = this.Left < 8 ? 8 : this.Left;
+            changeStationScreen.Top = this.Top + (this.Height / 2) - (changeStationScreen.Height / 2);
+            changeStationScreen.Left = this.Left < 8 ? 8 : this.Left;
 
-                // If the station screen is over the screen edge width.
-                if (changeStationScreen.Right + 8 > Screen.PrimaryScreen.WorkingArea.Width)
-                {
-                    changeStationScreen.Left = Screen.PrimaryScreen.WorkingArea.Width - changeStationScreen.Width - 8;
-                    this.Left = changeStationScreen.Left;
-                }
+            // If the station screen is over the screen edge width.
+            if (changeStationScreen.Right + 8 > Screen.PrimaryScreen.WorkingArea.Width)
+            {
+                changeStationScreen.Left = Screen.PrimaryScreen.WorkingArea.Width - changeStationScreen.Width - 8;
+                this.Left = changeStationScreen.Left;
+            }
 
-                // If the station screen is over the screen edge height.
-                if (changeStationScreen.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
-                {
-                    changeStationScreen.Top = Screen.PrimaryScreen.WorkingArea.Height - changeStationScreen.Height - 8;
-                }
+            // If the station screen is over the screen edge height.
+            if (changeStationScreen.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
+            {
+                changeStationScreen.Top = Screen.PrimaryScreen.WorkingArea.Height - changeStationScreen.Height - 8;
+            }
 
-                if (this.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
-                {
-                    this.Top = Screen.PrimaryScreen.WorkingArea.Height - this.Height - 8;
-                }
+            if (this.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
+            {
+                this.Top = Screen.PrimaryScreen.WorkingArea.Height - this.Height - 8;
+            }
 
-                // If the station screen is over the screen edge Y.
-                if (changeStationScreen.Top + 8 < 0)
-                {
-                    this.Top = 8;
-                    changeStationScreen.Top = 8;
-                }
+            // If the station screen is over the screen edge Y.
+            if (changeStationScreen.Top + 8 < 0)
+            {
+                this.Top = 8;
+                changeStationScreen.Top = 8;
+            }
 
-                changeStationScreen.Show();
-                Application.DoEvents();
-                changeStationScreen.ShowMe();
+            changeStationScreen.Show();
+            Application.DoEvents();
+            changeStationScreen.ShowMe();
 
-                slideLeft();
-                MainForm.StaticForm.linkWindows = true;
-                changeStationScreen.linkWindows = true;
+            MakeWayForClient();
+            LinkWindowsOn = true;
             //}
         }
 
-        public void slideLeft()
+        public void MakeWayForClient()
         {
-            double xOffset = this.Left;
-            double target = this.Left - this.Width - 8;
-
-            if (target < 8)
-                target = 8;
-
-            while (xOffset - 2 > target)
-            {
-                xOffset = Program.CosineInterpolate(xOffset, target, 0.25);
-                this.Left = (int)xOffset;
-                Thread.Sleep(8);
-            }
-            this.Left = (int)target;
+            SlideFormX(this.Left - this.Width - 8);
         }
 
-        public void slideRight()
+        public void ResumePosition()
         {
-            changeStationScreen.linkWindows = false;
+            // De-link the host and the client window.
+            LinkWindowsOn = false;
 
-            double xOffset = this.Left;
-            double target = changeStationScreen.Left;
+            SlideFormX(_linkWindowClient.Left);
+        }
 
-            while (xOffset < target - 2)
+        /// <summary>
+        /// Animates the forms X axis towards the target.
+        /// </summary>
+        /// <param name="targetX"></param>
+        private void SlideFormX(double targetX)
+        {
+            double x = this.Location.X;
+
+            System.Windows.Forms.Timer? timer = null;
+            timer = new System.Windows.Forms.Timer();
+            timer.Tick += (o, e) =>
             {
-                xOffset = Program.CosineInterpolate(xOffset, target, 0.25);
-                this.Left = (int)xOffset;
-                Thread.Sleep(8);
-            }
-            this.Left = (int)target;
+                if ((x < targetX && x >= targetX - 1) ||
+                    (x > targetX && x <= targetX + 1))
+                {
+                    this.Left = (int)targetX;
+                    timer?.Stop();
+                    timer?.Dispose();
+                    return;
+                }
+
+                x = Program.CosineInterpolate(x, targetX, 0.25);
+                this.Left = (int)x;
+            };
+            timer.Interval = 8;
+            timer.Start();
         }
 
         /// <summary>
@@ -296,22 +327,22 @@ namespace ZinRadioDesktop
         /// </summary>
         public void AutoUpdateThemedControls()
         {
-            if (WebStreamPlayer.WebAudioPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
-            {
-                RadioStationLogo.Start();
-                if (Theme == "Light")
-                    PlayButton.BackgroundImage = Properties.Resources.pause_dark;
-                else if (Theme == "Dark")
-                    PlayButton.BackgroundImage = Properties.Resources.pause_light;
-            }
-            else
-            {
-                RadioStationLogo.Stop();
-                if (Theme == "Light")
-                    PlayButton.BackgroundImage = Properties.Resources.play_dark;
-                else if (Theme == "Dark")
-                    PlayButton.BackgroundImage = Properties.Resources.play_light;
-            }
+            //if (WebStreamPlayer.WebAudioPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            //{
+            //    RadioStationLogo.Start();
+            //    if (Theme == "Light")
+            //        PlayButton.BackgroundImage = Properties.Resources.pause_dark;
+            //    else if (Theme == "Dark")
+            //        PlayButton.BackgroundImage = Properties.Resources.pause_light;
+            //}
+            //else
+            //{
+            //    RadioStationLogo.Stop();
+            //    if (Theme == "Light")
+            //        PlayButton.BackgroundImage = Properties.Resources.play_dark;
+            //    else if (Theme == "Dark")
+            //        PlayButton.BackgroundImage = Properties.Resources.play_light;
+            //}
         }
 
         /// <summary>
@@ -345,16 +376,16 @@ namespace ZinRadioDesktop
 
         private void MainForm_Move(object sender, EventArgs e)
         {
-            if (linkWindows && this.ContainsFocus)
+            if (LinkWindowsOn && this.ContainsFocus)
             {
-                changeStationScreen.Left = this.Right + 8;
-                changeStationScreen.Top = this.Top + (this.Height / 2) - (changeStationScreen.Height / 2);
+                _linkWindowClient.Left = this.Right + 8;
+                _linkWindowClient.Top = this.Top + (this.Height / 2) - (_linkWindowClient.Height / 2);
             }
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            formClosing = true;
+            Process.GetCurrentProcess().Kill();
         }
     }
 }

@@ -99,22 +99,25 @@ namespace ZinRadioDesktop
 
         public void ShowMe()
         {
-            new Thread(new ThreadStart(() =>
+            if (_currentStation != null)
+                stationListView.Selected = stationListView.Items.IndexOf(_currentStation);
+
+            BringToFront();
+
+            var timer = new System.Windows.Forms.Timer();
+            timer.Tick += (_, _) =>
             {
-                if (_currentStation != null)
-                    stationListView.Selected = stationListView.Items.IndexOf(_currentStation);
-
-                BringToFront();
-
-                while (Opacity < 1)
+                if (Opacity >= 1)
                 {
-                    Opacity += 0.1;
-                    Thread.Sleep(8);
+                    timer.Stop();
+                    timer.Dispose();
+                    return;
                 }
-            }))
-            {
-                Priority = ThreadPriority.BelowNormal
-            }.Start();
+
+                Opacity += 0.1;
+            };
+            timer.Interval = 8;
+            timer.Start();
         }
 
         public void HideMe()

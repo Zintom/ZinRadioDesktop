@@ -14,10 +14,12 @@ using System.Windows.Forms;
 
 namespace ZinRadioDesktop
 {
-    public partial class ChangeStation : Form
+    public partial class ChangeStation : Form, ILinkWindowClient
     {
 
-        public bool linkWindows = false;
+        private RadioStation? _currentStation;
+        private readonly IDisplayCurrentStation _displayer;
+        private readonly ILinkWindowHost _linkWindowHost;
 
         #region Colour Brush Definitions
         public SolidBrush ItemBackground = new SolidBrush(Color.FromArgb(230, 230, 230));
@@ -31,19 +33,30 @@ namespace ZinRadioDesktop
         public SolidBrush EditorsChoiceColour = new SolidBrush(Color.FromArgb(255, 100, 149, 237));
         #endregion
 
-        [DllImport("user32.dll")]
-        static extern bool LockWindowUpdate(IntPtr hWndLock);
-
-        public ChangeStation()
+        private ChangeStation(IDisplayCurrentStation displayer, ILinkWindowHost linkWindowHost)
         {
             InitializeComponent();
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
+            _displayer = displayer;
+            _linkWindowHost = linkWindowHost;
         }
 
-        private async void ChangeStation_Load(object sender, EventArgs e)
+        public static async Task<ChangeStation> CreateAsync(IDisplayCurrentStation displayer, ILinkWindowHost linkWindowHost)
         {
-            Application.DoEvents();
-            //WaitAndHide();
+            ChangeStation form = new ChangeStation(displayer, linkWindowHost);
+
+            // Load stations.
+            string stationList = await GetStationList();
+
+            // Create the list.
+            form.ApplyStations(stationList);
+
+            return form;
+        }
+
+        private void ChangeStation_Load(object sender, EventArgs e)
+        {
+            //Application.DoEvents();
 
             // Redo entire caching system.
             //string cache = Properties.Settings.Default.StationCache;
@@ -54,23 +67,11 @@ namespace ZinRadioDesktop
             //}
             //else
             //    Console.WriteLine("No station cache.");
-
-            ApplyStations(await GetStationList());
         }
 
-        public Task WaitAndHide()
+        private static async Task<string> GetStationList()
         {
-            return Task.Run(() =>
-            {
-                this.Opacity = 0;
-                Thread.Sleep(100);
-                this.Hide();
-            });
-        }
-
-        public static async Task<string> GetStationList()
-        {
-            string raw = await NetworkHelper.HttpClient.GetStringAsync(Program.StationListUrl);
+            string raw = await NetworkHelper.DefaultHttpClient.GetStringAsync(Program.StationListUrl);
 
             // Store in cache
             Properties.Settings.Default.StationCache = raw;
@@ -79,7 +80,7 @@ namespace ZinRadioDesktop
             return raw;
         }
 
-        public void ApplyStations(string rawData)
+        private void ApplyStations(string rawData)
         {
             string[] rawStations = rawData.Split("\n", StringSplitOptions.RemoveEmptyEntries);
 
@@ -89,22 +90,19 @@ namespace ZinRadioDesktop
                 stations.Add(RadioStation.FromString(rawStations[i]));
             }
 
-            // Push loaded stations into global scope.
-            //Stations = stations;
             stations.Sort(new StationSort());
-            //stationListBox.Items.AddRange(stations.ToArray());
-            zinListView1.Items.Clear();
-            zinListView1.AddRange(stations.ToArray());
+            stationListView.Items.Clear();
+            stationListView.AddRange(stations.ToArray());
 
-            zinListView1.Invalidate();
+            stationListView.Invalidate();
         }
 
-        public Task ShowMe()
+        public void ShowMe()
         {
-            return Task.Run(() =>
+            new Thread(new ThreadStart(() =>
             {
-                if (MainForm.CurrentStation != null)
-                    zinListView1.Selected = zinListView1.Items.IndexOf(MainForm.CurrentStation);
+                if (_currentStation != null)
+                    stationListView.Selected = stationListView.Items.IndexOf(_currentStation);
 
                 BringToFront();
 
@@ -113,50 +111,40 @@ namespace ZinRadioDesktop
                     Opacity += 0.1;
                     Thread.Sleep(8);
                 }
-            });
+            }))
+            {
+                Priority = ThreadPriority.BelowNormal
+            }.Start();
         }
 
-        public Task HideMe()
+        public void HideMe()
         {
-            return Task.Run(() =>
-            {
-                MainForm.StaticForm.linkWindows = false;
-                this.Hide();
+            _linkWindowHost.LinkWindowsOn = false;
+            this.Hide();
+            this.Opacity = 0;
 
-                Thread.Sleep(150);
-
-                if (MainForm.StaticForm.formClosing)
-                {
-                    MainForm.StaticForm.Close();
-                }
-
-                this.Opacity = 0;
-                MainForm.StaticForm.slideRight();
-                ResetSearch();
-            });
+            _linkWindowHost.ResumePosition();
+            ResetSearch();
         }
 
         private void ChangeStation_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!MainForm.StaticForm.formClosing)
-            {
-                e.Cancel = true;
-                HideMe();
-            }
+            e.Cancel = true;
+            HideMe();
         }
 
-        private void zinListView1_ItemClicked(int index)
+        private async void StationListView_ItemClicked(int index)
         {
-            RadioStation selected = zinListView1.Items[index];
-            if (MainForm.CurrentStation == null || selected.URL != MainForm.CurrentStation.URL)
+            RadioStation selected = stationListView.Items[index];
+            if (_currentStation == null || selected.URL != _currentStation.URL)
             {
-                MainForm.CurrentStation = selected;
-                MainForm.StaticForm.UpdateTitleText();
-                MainForm.RadioStationLogo.Start();
+                _currentStation = selected;
+                _displayer.UpdateCurrentStation(selected);
 
-                WebStreamPlayer.PlayStream(selected.URL);
-                MainForm.StaticForm.UpdateThemedControls(true);
                 HideMe();
+
+                await WebAudioPlayer.Instance.Stop();
+                WebAudioPlayer.Instance.Play(selected.URL);
             }
             else
             {
@@ -164,11 +152,11 @@ namespace ZinRadioDesktop
             }
         }
 
-        private void zinListView1_DrawItem(DrawItemState state, Graphics g, int index, Rectangle bounds)
+        private void StationListView_DrawItem(DrawItemState state, Graphics g, int index, Rectangle bounds)
         {
-            if (zinListView1.Items.Count > 0)
+            if (stationListView.Items.Count > 0)
             {
-                RadioStation station = (RadioStation)zinListView1.Items[index];
+                RadioStation station = (RadioStation)stationListView.Items[index];
 
                 // Draw Background
                 if (state == DrawItemState.Selected)
@@ -195,27 +183,28 @@ namespace ZinRadioDesktop
             }
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void SearchBox_Enter(object sender, EventArgs e)
         {
+            // Clear the search box text Hint Text.
             searchBox.Text = null;
             searchBox.ForeColor = Color.Black;
         }
 
-        private void searchBox_TextChanged(object sender, EventArgs e)
+        private void SearchBox_TextChanged(object sender, EventArgs e)
         {
             if (searchBox.Text != "")
             {
-                zinListView1.Items.Sort(new StationSortSearch(searchBox.Text));
-                zinListView1.Invalidate();
+                stationListView.Items.Sort(new StationSortSearch(searchBox.Text));
+                stationListView.Invalidate();
             }
             else
             {
-                zinListView1.Items.Sort(new StationSort());
-                zinListView1.Invalidate();
+                stationListView.Items.Sort(new StationSort());
+                stationListView.Invalidate();
             }
         }
 
-        private void searchBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void SearchBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
@@ -223,8 +212,8 @@ namespace ZinRadioDesktop
 
                 if (searchBox.Text == "")
                 {
-                    zinListView1.Select();
-                    zinListView1.Focus();
+                    stationListView.Select();
+                    stationListView.Focus();
                     searchBox.Text = "Search for a station";
                     searchBox.ForeColor = Color.DimGray;
                 }
@@ -248,13 +237,13 @@ namespace ZinRadioDesktop
 
         public void ResetSearch()
         {
-            zinListView1.Select();
-            zinListView1.Focus();
+            stationListView.Select();
+            stationListView.Focus();
             searchBox.Text = "Search for a station";
             searchBox.ForeColor = Color.DimGray;
 
-            zinListView1.Items.Sort(new StationSort());
-            zinListView1.Invalidate();
+            stationListView.Items.Sort(new StationSort());
+            stationListView.Invalidate();
         }
 
         protected override CreateParams CreateParams
@@ -269,10 +258,10 @@ namespace ZinRadioDesktop
 
         private void ChangeStation_Move(object sender, EventArgs e)
         {
-            if (linkWindows && this.ContainsFocus)
+            if (_linkWindowHost.LinkWindowsOn && this.ContainsFocus)
             {
-                MainForm.StaticForm.Left = this.Left - MainForm.StaticForm.Width - 8;
-                MainForm.StaticForm.Top = this.Top + (this.Height / 2) - (MainForm.StaticForm.Height / 2);
+                _linkWindowHost.Left = this.Left - _linkWindowHost.Width - 8;
+                _linkWindowHost.Top = this.Top + (this.Height / 2) - (_linkWindowHost.Height / 2);
             }
         }
 

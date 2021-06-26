@@ -33,14 +33,14 @@
             this.searchBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.title = new ZinRadioDesktop.TransparentLabel();
-            this.zinListView1 = new ZinRadioDesktop.ZinListView();
+            this.stationListView = new ZinRadioDesktop.ZinListView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 20F);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(56, 161);
             this.label1.Name = "label1";
@@ -53,7 +53,7 @@
             // 
             this.MediaURL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.MediaURL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MediaURL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MediaURL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MediaURL.ForeColor = System.Drawing.Color.White;
             this.MediaURL.Location = new System.Drawing.Point(85, 223);
             this.MediaURL.Name = "MediaURL";
@@ -68,7 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.searchBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.searchBox.ForeColor = System.Drawing.Color.DimGray;
             this.searchBox.Location = new System.Drawing.Point(-2, 74);
             this.searchBox.Name = "searchBox";
@@ -76,9 +76,9 @@
             this.searchBox.TabIndex = 3;
             this.searchBox.Text = "Search for a station";
             this.searchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
-            this.searchBox.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.searchBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchBox_KeyPress);
+            this.searchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            this.searchBox.Enter += new System.EventHandler(this.SearchBox_Enter);
+            this.searchBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchBox_KeyPress);
             // 
             // pictureBox1
             // 
@@ -94,7 +94,7 @@
             // title
             // 
             this.title.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.title.Font = new System.Drawing.Font("Segoe UI Light", 20F);
+            this.title.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.title.ForeColor = System.Drawing.Color.White;
             this.title.Location = new System.Drawing.Point(143, 14);
             this.title.Name = "title";
@@ -102,23 +102,23 @@
             this.title.TabIndex = 0;
             this.title.Text = "Stations";
             // 
-            // zinListView1
+            // stationListView
             // 
-            this.zinListView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.stationListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.zinListView1.BackColor = System.Drawing.Color.White;
-            this.zinListView1.Location = new System.Drawing.Point(0, 108);
-            this.zinListView1.Name = "zinListView1";
-            this.zinListView1.RowDistance = 12;
-            this.zinListView1.RowHeight = 44;
-            this.zinListView1.RowWidthOffset = 40;
-            this.zinListView1.Selected = -1;
-            this.zinListView1.Size = new System.Drawing.Size(384, 516);
-            this.zinListView1.TabIndex = 2;
-            this.zinListView1.Text = "zinListView1";
-            this.zinListView1.DrawItem += new ZinRadioDesktop.ZinListView.DrawItemEvent(this.zinListView1_DrawItem);
-            this.zinListView1.ItemClicked += new ZinRadioDesktop.ZinListView.ItemClickedEvent(this.zinListView1_ItemClicked);
+            this.stationListView.BackColor = System.Drawing.Color.White;
+            this.stationListView.Location = new System.Drawing.Point(0, 108);
+            this.stationListView.Name = "stationListView";
+            this.stationListView.RowDistance = 12;
+            this.stationListView.RowHeight = 44;
+            this.stationListView.RowWidthOffset = 40;
+            this.stationListView.Selected = -1;
+            this.stationListView.Size = new System.Drawing.Size(384, 516);
+            this.stationListView.TabIndex = 2;
+            this.stationListView.Text = "zinListView1";
+            this.stationListView.DrawItem += new ZinRadioDesktop.ZinListView.DrawItemEvent(this.StationListView_DrawItem);
+            this.stationListView.ItemClicked += new ZinRadioDesktop.ZinListView.ItemClickedEvent(this.StationListView_ItemClicked);
             // 
             // ChangeStation
             // 
@@ -128,9 +128,9 @@
             this.ClientSize = new System.Drawing.Size(384, 624);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.title);
-            this.Controls.Add(this.zinListView1);
+            this.Controls.Add(this.stationListView);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -154,7 +154,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox MediaURL;
         private TransparentLabel title;
-        private ZinListView zinListView1;
+        private ZinListView stationListView;
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

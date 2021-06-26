@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ZinRadioDesktop
@@ -16,17 +12,20 @@ namespace ZinRadioDesktop
         Graphics g;
         Bitmap buffer = new Bitmap(128, 128);
 
+        Color BackColor;
+
         protected override void OnPaint(PaintEventArgs e)
         {
-            e.Graphics.Clear(MainForm.StaticForm.BackColor);
+            e.Graphics.Clear(BackColor);
             e.Graphics.DrawImage(buffer, new Rectangle(0, 0, this.Size.Width, this.Size.Height));
         }
         protected override void OnPaintBackground(PaintEventArgs pevent)
         {
         }
 
-        public RadioAnimator()
+        public RadioAnimator(Color backColor)
         {
+            this.BackColor = backColor;
             this.Size = new Size(128, 128);
             this.Anchor = AnchorStyles.None;
 

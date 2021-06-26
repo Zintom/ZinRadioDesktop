@@ -302,8 +302,7 @@ namespace ZinRadioDesktop
         {
             double x = this.Location.X;
 
-            System.Windows.Forms.Timer? timer = null;
-            timer = new System.Windows.Forms.Timer();
+            var timer = new System.Windows.Forms.Timer();
             timer.Tick += (o, e) =>
             {
                 if ((x < targetX && x >= targetX - 1) ||

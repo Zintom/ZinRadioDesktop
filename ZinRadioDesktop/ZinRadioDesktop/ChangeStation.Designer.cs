@@ -138,8 +138,9 @@
             this.Opacity = 0D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Change Station";
+            this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChangeStation_FormClosing);
             this.Load += new System.EventHandler(this.ChangeStation_Load);
             this.Move += new System.EventHandler(this.ChangeStation_Move);

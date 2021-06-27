@@ -4,7 +4,6 @@ using Nito.AsyncEx;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
@@ -18,6 +17,7 @@ namespace ZinRadioDesktop
         public enum PlaybackState
         {
             Playing,
+            Paused,
             Stopped
         }
 
@@ -55,16 +55,16 @@ namespace ZinRadioDesktop
             _noCacheHttpClient.DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue() { NoCache = true };
         }
 
-        private WaveOut? _waveOut;
+        private WaveOutEvent? _waveOut;
         private BufferedWaveProvider? _bufferedWaveProvider = null;
 
-        private readonly AsyncLock _playStopLocker = new AsyncLock();
+        private readonly AsyncLock _mediaControlLocker = new AsyncLock();
         private readonly AsyncManualResetEvent _playExited = new AsyncManualResetEvent(false);
         private bool _playerPleaseExit = false;
 
         public async Task Stop()
         {
-            using (await _playStopLocker.LockAsync())
+            using (await _mediaControlLocker.LockAsync())
             {
                 if (AudioPlaybackState == PlaybackState.Stopped)
                 {
@@ -76,27 +76,25 @@ namespace ZinRadioDesktop
             }
         }
 
-        public void Play(string url)
+        public async Task Play(string url)
         {
-            if (!Monitor.TryEnter(_playStopLocker))
+            using (await _mediaControlLocker.LockAsync())
             {
-                return;
+                if (AudioPlaybackState == PlaybackState.Playing)
+                {
+                    Debug.WriteLine("An attempt to play was made before calling Stop().");
+                    return;
+                }
+
+                AudioPlaybackState = PlaybackState.Playing;
+                _playerPleaseExit = false;
+                _playExited.Reset();
             }
-            else if(AudioPlaybackState == PlaybackState.Playing)
-            {
-                Debug.WriteLine("An attempt to play was made before calling Stop().");
-                return;
-            }
 
-            AudioPlaybackState = PlaybackState.Playing;
-            _playerPleaseExit = false;
-            _playExited.Reset();
-
-            Monitor.Exit(_playStopLocker);
-
-            _waveOut = new WaveOut();
             new Thread(new ThreadStart(async () =>
             {
+                _waveOut = new WaveOutEvent();
+
                 using (Stream stream = await _noCacheHttpClient.GetStreamAsync(url))
                 using (ReadFullyStream readFullyAudioStream = new ReadFullyStream(stream))
                 {
@@ -169,6 +167,30 @@ namespace ZinRadioDesktop
                 // Release waiting threads.
                 _playExited.Set();
             })).Start();
+        }
+
+        public async Task Pause()
+        {
+            using (await _mediaControlLocker.LockAsync())
+            {
+                if (AudioPlaybackState == PlaybackState.Playing)
+                {
+                    _waveOut?.Pause();
+                    AudioPlaybackState = PlaybackState.Paused;
+                }
+            }
+        }
+
+        public async Task Resume()
+        {
+            using (await _mediaControlLocker.LockAsync())
+            {
+                if (AudioPlaybackState == PlaybackState.Paused)
+                {
+                    _waveOut?.Play();
+                    AudioPlaybackState = PlaybackState.Playing;
+                }
+            }
         }
 
         private static IMp3FrameDecompressor CreateMp3FrameDecompressor(Mp3Frame frame)

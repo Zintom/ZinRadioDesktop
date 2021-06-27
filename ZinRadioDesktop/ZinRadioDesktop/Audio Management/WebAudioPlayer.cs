@@ -55,7 +55,7 @@ namespace ZinRadioDesktop
             _noCacheHttpClient.DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue() { NoCache = true };
         }
 
-        private WaveOut? _waveOut;
+        private WaveOutEvent? _waveOut;
         private BufferedWaveProvider? _bufferedWaveProvider = null;
 
         private readonly AsyncLock _mediaControlLocker = new AsyncLock();
@@ -76,27 +76,25 @@ namespace ZinRadioDesktop
             }
         }
 
-        public void Play(string url)
+        public async Task Play(string url)
         {
-            if (!Monitor.TryEnter(_mediaControlLocker))
+            using (await _mediaControlLocker.LockAsync())
             {
-                return;
+                if (AudioPlaybackState == PlaybackState.Playing)
+                {
+                    Debug.WriteLine("An attempt to play was made before calling Stop().");
+                    return;
+                }
+
+                AudioPlaybackState = PlaybackState.Playing;
+                _playerPleaseExit = false;
+                _playExited.Reset();
             }
-            else if (AudioPlaybackState == PlaybackState.Playing)
-            {
-                Debug.WriteLine("An attempt to play was made before calling Stop().");
-                return;
-            }
 
-            AudioPlaybackState = PlaybackState.Playing;
-            _playerPleaseExit = false;
-            _playExited.Reset();
-
-            Monitor.Exit(_mediaControlLocker);
-
-            _waveOut = new WaveOut();
             new Thread(new ThreadStart(async () =>
             {
+                _waveOut = new WaveOutEvent();
+
                 using (Stream stream = await _noCacheHttpClient.GetStreamAsync(url))
                 using (ReadFullyStream readFullyAudioStream = new ReadFullyStream(stream))
                 {

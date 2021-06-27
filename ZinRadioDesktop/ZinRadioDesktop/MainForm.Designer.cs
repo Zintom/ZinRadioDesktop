@@ -100,7 +100,6 @@
             this.Text = " Zin Radio Desktop 2021 Beta (.NET 5)";
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ChannelNameArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

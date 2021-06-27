@@ -1,16 +1,9 @@
 ﻿using Nito.AsyncEx;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ZinRadioDesktop
@@ -22,37 +15,26 @@ namespace ZinRadioDesktop
 
     public partial class MainForm : Form, IDisplayCurrentStation
     {
-        public static ChangeStation changeStationScreen;
-        public static string Theme { get; set; }
+        public ChangeStation _changeStationScreen;
+        public string Theme { get; set; } = "Light";
 
-        private bool linkWindowsOn = false;
-
-        public static RadioAnimator RadioStationLogo;
+        public RadioAnimator RadioStationLogo;
         ZinMenuBarControl MainMenuBarControl;
-
-        [DllImport("user32.dll")]
-        static extern bool LockWindowUpdate(IntPtr hWndLock);
 
         public MainForm()
         {
             InitializeComponent();
 
-            SetupMenuStrip();
-
-            changeStationScreen = new ChangeStation(this, this);
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Theme = "Light";
-
             RadioStationLogo = new RadioAnimator(BackColor);
             RadioStationLogo.Location = new Point(ClientSize.Width / 2 - RadioStationLogo.Width / 2, ClientSize.Height / 2 - RadioStationLogo.Height / 2);
-            this.Controls.Add(RadioStationLogo);
+            Controls.Add(RadioStationLogo);
 
             // Change Form Icon
-            this.Icon = Properties.Resources.radio;
+            Icon = Properties.Resources.radio;
+
+            SetupMenuStrip();
+
+            _changeStationScreen = new ChangeStation(this, this);
         }
 
         [MemberNotNull(nameof(MainMenuBarControl))]
@@ -153,20 +135,20 @@ namespace ZinRadioDesktop
         {
             using (await _showStationLocker.LockAsync())
             {
-                changeStationScreen.Top = this.Top + (this.Height / 2) - (changeStationScreen.Height / 2);
-                changeStationScreen.Left = this.Left < 8 ? 8 : this.Left;
+                _changeStationScreen.Top = this.Top + (this.Height / 2) - (_changeStationScreen.Height / 2);
+                _changeStationScreen.Left = this.Left < 8 ? 8 : this.Left;
 
                 // If the secondary screen is over the screen width.
-                if (changeStationScreen.Right + 8 > Screen.PrimaryScreen.WorkingArea.Width)
+                if (_changeStationScreen.Right + 8 > Screen.PrimaryScreen.WorkingArea.Width)
                 {
-                    changeStationScreen.Left = Screen.PrimaryScreen.WorkingArea.Width - changeStationScreen.Width - 8;
-                    this.Left = changeStationScreen.Left;
+                    _changeStationScreen.Left = Screen.PrimaryScreen.WorkingArea.Width - _changeStationScreen.Width - 8;
+                    this.Left = _changeStationScreen.Left;
                 }
 
                 // If the secondary screen is over the screen height.
-                if (changeStationScreen.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
+                if (_changeStationScreen.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
                 {
-                    changeStationScreen.Top = Screen.PrimaryScreen.WorkingArea.Height - changeStationScreen.Height - 8;
+                    _changeStationScreen.Top = Screen.PrimaryScreen.WorkingArea.Height - _changeStationScreen.Height - 8;
                 }
 
                 // If the main screen bottom is below the screen height.
@@ -176,21 +158,21 @@ namespace ZinRadioDesktop
                 }
 
                 // If the secondary screen is over the screen Top.
-                if (changeStationScreen.Top + 8 < 0)
+                if (_changeStationScreen.Top + 8 < 0)
                 {
                     this.Top = 8;
-                    changeStationScreen.Top = 8;
+                    _changeStationScreen.Top = 8;
                 }
 
-                int newMainFormX = changeStationScreen.Left - this.Width - 8;
+                int newMainFormX = _changeStationScreen.Left - this.Width - 8;
                 if (newMainFormX < 8) { newMainFormX = 8; }
                 await WindowOrchestrator.SlideFormX(this, newMainFormX, _showStationAnimationLocker);
 
                 this.TopMost = true;
-                changeStationScreen.ShowDialog(this);
+                _changeStationScreen.ShowDialog(this);
                 this.TopMost = false;
 
-                await WindowOrchestrator.SlideFormX(this, changeStationScreen.Left, _showStationAnimationLocker);
+                await WindowOrchestrator.SlideFormX(this, _changeStationScreen.Left, _showStationAnimationLocker);
             }
         }
 

@@ -29,9 +29,6 @@ namespace ZinRadioDesktop
             RadioStationLogo.Location = new Point(ClientSize.Width / 2 - RadioStationLogo.Width / 2, ClientSize.Height / 2 - RadioStationLogo.Height / 2);
             Controls.Add(RadioStationLogo);
 
-            // Change Form Icon
-            Icon = Properties.Resources.radio;
-
             SetupMenuStrip();
 
             _changeStationScreen = new ChangeStation(this, this);

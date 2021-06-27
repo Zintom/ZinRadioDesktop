@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.PlayButton = new System.Windows.Forms.Button();
             this.ChannelNameArea = new System.Windows.Forms.PictureBox();
             this.ChannelNameLabel = new System.Windows.Forms.Label();
@@ -91,11 +92,11 @@
             this.Controls.Add(this.ChannelNameLabel);
             this.Controls.Add(this.ChannelNameArea);
             this.Controls.Add(this.PlayButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(429, 479);
             this.Name = "MainForm";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Zin Radio Desktop 2021 Beta (.NET 5)";
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);

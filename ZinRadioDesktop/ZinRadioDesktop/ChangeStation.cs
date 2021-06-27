@@ -1,25 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Net;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ZinRadioDesktop
 {
-    public partial class ChangeStation : Form, ILinkWindowClient
+    public partial class ChangeStation : Form
     {
+        private Form _mainForm;
+        private bool _linkWindows = false;
 
         private RadioStation? _currentStation;
         private readonly IDisplayCurrentStation _displayer;
-        private readonly ILinkWindowHost _linkWindowHost;
 
         #region Colour Brush Definitions
         public SolidBrush ItemBackground = new SolidBrush(Color.FromArgb(230, 230, 230));
@@ -33,30 +26,19 @@ namespace ZinRadioDesktop
         public SolidBrush EditorsChoiceColour = new SolidBrush(Color.FromArgb(255, 100, 149, 237));
         #endregion
 
-        private ChangeStation(IDisplayCurrentStation displayer, ILinkWindowHost linkWindowHost)
+        public ChangeStation(IDisplayCurrentStation displayer, Form mainForm)
         {
             InitializeComponent();
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
             _displayer = displayer;
-            _linkWindowHost = linkWindowHost;
-        }
+            _mainForm = mainForm;
 
-        public static async Task<ChangeStation> CreateAsync(IDisplayCurrentStation displayer, ILinkWindowHost linkWindowHost)
-        {
-            ChangeStation form = new ChangeStation(displayer, linkWindowHost);
-
-            // Load stations.
-            string stationList = await GetStationList();
-
-            // Create the list.
-            form.ApplyStations(stationList);
-
-            return form;
+            GetStationList().ContinueWith((stationList) => this.SafeInvokeIfRequired(() => ApplyStations(stationList.Result)), TaskContinuationOptions.OnlyOnRanToCompletion);
         }
 
         private void ChangeStation_Load(object sender, EventArgs e)
         {
-            //Application.DoEvents();
+            AnimateShow();
 
             // Redo entire caching system.
             //string cache = Properties.Settings.Default.StationCache;
@@ -67,6 +49,11 @@ namespace ZinRadioDesktop
             //}
             //else
             //    Console.WriteLine("No station cache.");
+
+            ResetSearch();
+
+            if (_currentStation != null)
+                stationListView.Selected = stationListView.Items.IndexOf(_currentStation);
         }
 
         private static async Task<string> GetStationList()
@@ -97,43 +84,24 @@ namespace ZinRadioDesktop
             stationListView.Invalidate();
         }
 
-        public void ShowMe()
-        {
-            if (_currentStation != null)
-                stationListView.Selected = stationListView.Items.IndexOf(_currentStation);
-
-            BringToFront();
-
-            var timer = new System.Windows.Forms.Timer();
-            timer.Tick += (_, _) =>
-            {
-                if (Opacity >= 1)
-                {
-                    timer.Stop();
-                    timer.Dispose();
-                    return;
-                }
-
-                Opacity += 0.1;
-            };
-            timer.Interval = 8;
-            timer.Start();
-        }
-
-        public void HideMe()
-        {
-            _linkWindowHost.LinkWindowsOn = false;
-            this.Hide();
-            this.Opacity = 0;
-
-            _linkWindowHost.ResumePosition();
-            ResetSearch();
-        }
-
         private void ChangeStation_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
-            HideMe();
+            AnimateHide();
+        }
+
+        public void AnimateShow()
+        {
+            this.BringToFront();
+
+            WindowOrchestrator.AnimateOpacity(this, 1, new Action(() => { _linkWindows = true; }));
+        }
+
+        public void AnimateHide()
+        {
+            _linkWindows = false;
+            this.Hide();
+            this.Opacity = 0;
         }
 
         private async void StationListView_ItemClicked(int index)
@@ -144,14 +112,14 @@ namespace ZinRadioDesktop
                 _currentStation = selected;
                 _displayer.UpdateCurrentStation(selected);
 
-                HideMe();
+                AnimateHide();
 
                 await WebAudioPlayer.Instance.Stop();
                 WebAudioPlayer.Instance.Play(selected.URL);
             }
             else
             {
-                HideMe();
+                AnimateHide();
             }
         }
 
@@ -261,35 +229,12 @@ namespace ZinRadioDesktop
 
         private void ChangeStation_Move(object sender, EventArgs e)
         {
-            if (_linkWindowHost.LinkWindowsOn && this.ContainsFocus)
+            if (_linkWindows && this.ContainsFocus)
             {
-                _linkWindowHost.Left = this.Left - _linkWindowHost.Width - 8;
-                _linkWindowHost.Top = this.Top + (this.Height / 2) - (_linkWindowHost.Height / 2);
+                _mainForm.Left = this.Left - _mainForm.Width - 8;
+                _mainForm.Top = this.Top + (this.Height / 2) - (_mainForm.Height / 2);
             }
         }
-
-        //const int WM_SYSCOMMAND = 0x0112;
-        //const int WM_NCMOUSEMOVE = 160;
-        //const int SC_MOVE = 0xF010;
-        //protected override void WndProc(ref Message m)
-        //{
-        //    Console.WriteLine(m.Msg);
-        //    switch (m.Msg)
-        //    {
-        //        case WM_NCMOUSEMOVE:
-        //            if (this.Bottom + 8 > Screen.PrimaryScreen.WorkingArea.Height)
-        //            {
-        //                this.Top = Screen.PrimaryScreen.WorkingArea.Height - this.Height - 8;
-        //            }
-        //            if (this.Right + 8 > Screen.PrimaryScreen.WorkingArea.Width + 8)
-        //            {
-        //                this.Left = Screen.PrimaryScreen.WorkingArea.Width - this.Width - 8;
-        //            }
-        //            break;
-        //    }
-
-        //    base.WndProc(ref m);
-        //}
     }
 
     public class RadioStation

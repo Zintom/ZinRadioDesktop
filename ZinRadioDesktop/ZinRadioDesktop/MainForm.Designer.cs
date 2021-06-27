@@ -64,7 +64,7 @@
             this.ChannelNameArea.Size = new System.Drawing.Size(413, 55);
             this.ChannelNameArea.TabIndex = 5;
             this.ChannelNameArea.TabStop = false;
-            this.ChannelNameArea.Click += new System.EventHandler(this.ChangeStationDialog);
+            this.ChannelNameArea.Click += new System.EventHandler(this.ShowChangeStationDialog);
             // 
             // ChannelNameLabel
             // 
@@ -80,7 +80,7 @@
             this.ChannelNameLabel.Size = new System.Drawing.Size(105, 30);
             this.ChannelNameLabel.TabIndex = 6;
             this.ChannelNameLabel.Text = "No Station";
-            this.ChannelNameLabel.Click += new System.EventHandler(this.ChangeStationDialog);
+            this.ChannelNameLabel.Click += new System.EventHandler(this.ShowChangeStationDialog);
             // 
             // MainForm
             // 
@@ -101,7 +101,6 @@
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.Move += new System.EventHandler(this.MainForm_Move);
             ((System.ComponentModel.ISupportInitialize)(this.ChannelNameArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

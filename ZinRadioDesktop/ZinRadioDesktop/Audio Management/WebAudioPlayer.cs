@@ -18,6 +18,7 @@ namespace ZinRadioDesktop
         public enum PlaybackState
         {
             Playing,
+            Paused,
             Stopped
         }
 
@@ -58,13 +59,13 @@ namespace ZinRadioDesktop
         private WaveOut? _waveOut;
         private BufferedWaveProvider? _bufferedWaveProvider = null;
 
-        private readonly AsyncLock _playStopLocker = new AsyncLock();
+        private readonly AsyncLock _mediaControlLocker = new AsyncLock();
         private readonly AsyncManualResetEvent _playExited = new AsyncManualResetEvent(false);
         private bool _playerPleaseExit = false;
 
         public async Task Stop()
         {
-            using (await _playStopLocker.LockAsync())
+            using (await _mediaControlLocker.LockAsync())
             {
                 if (AudioPlaybackState == PlaybackState.Stopped)
                 {
@@ -78,11 +79,11 @@ namespace ZinRadioDesktop
 
         public void Play(string url)
         {
-            if (!Monitor.TryEnter(_playStopLocker))
+            if (!Monitor.TryEnter(_mediaControlLocker))
             {
                 return;
             }
-            else if(AudioPlaybackState == PlaybackState.Playing)
+            else if (AudioPlaybackState == PlaybackState.Playing)
             {
                 Debug.WriteLine("An attempt to play was made before calling Stop().");
                 return;
@@ -92,7 +93,7 @@ namespace ZinRadioDesktop
             _playerPleaseExit = false;
             _playExited.Reset();
 
-            Monitor.Exit(_playStopLocker);
+            Monitor.Exit(_mediaControlLocker);
 
             _waveOut = new WaveOut();
             new Thread(new ThreadStart(async () =>
@@ -169,6 +170,30 @@ namespace ZinRadioDesktop
                 // Release waiting threads.
                 _playExited.Set();
             })).Start();
+        }
+
+        public async Task Pause()
+        {
+            using (await _mediaControlLocker.LockAsync())
+            {
+                if (AudioPlaybackState == PlaybackState.Playing)
+                {
+                    _waveOut?.Pause();
+                    AudioPlaybackState = PlaybackState.Paused;
+                }
+            }
+        }
+
+        public async Task Resume()
+        {
+            using (await _mediaControlLocker.LockAsync())
+            {
+                if (AudioPlaybackState == PlaybackState.Paused)
+                {
+                    _waveOut?.Play();
+                    AudioPlaybackState = PlaybackState.Playing;
+                }
+            }
         }
 
         private static IMp3FrameDecompressor CreateMp3FrameDecompressor(Mp3Frame frame)

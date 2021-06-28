@@ -38,19 +38,19 @@
             // PlayButton
             // 
             this.PlayButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PlayButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(100)))), ((int)(((byte)(178)))));
+            this.PlayButton.BackgroundImage = global::ZinRadioDesktop.Properties.Resources.media_play_8x;
             this.PlayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(100)))), ((int)(((byte)(178)))));
             this.PlayButton.FlatAppearance.BorderSize = 0;
-            this.PlayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.PlayButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PlayButton.Location = new System.Drawing.Point(189, 321);
+            this.PlayButton.Location = new System.Drawing.Point(369, 37);
             this.PlayButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PlayButton.Name = "PlayButton";
-            this.PlayButton.Size = new System.Drawing.Size(37, 37);
+            this.PlayButton.Size = new System.Drawing.Size(32, 32);
             this.PlayButton.TabIndex = 3;
-            this.PlayButton.UseVisualStyleBackColor = true;
+            this.PlayButton.UseVisualStyleBackColor = false;
             this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
             // ChannelNameArea
@@ -62,7 +62,7 @@
             this.ChannelNameArea.Location = new System.Drawing.Point(0, 25);
             this.ChannelNameArea.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChannelNameArea.Name = "ChannelNameArea";
-            this.ChannelNameArea.Size = new System.Drawing.Size(413, 55);
+            this.ChannelNameArea.Size = new System.Drawing.Size(413, 56);
             this.ChannelNameArea.TabIndex = 5;
             this.ChannelNameArea.TabStop = false;
             this.ChannelNameArea.Click += new System.EventHandler(this.ShowChangeStationDialog);
@@ -75,7 +75,7 @@
             this.ChannelNameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChannelNameLabel.Font = new System.Drawing.Font("Segoe UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChannelNameLabel.ForeColor = System.Drawing.Color.White;
-            this.ChannelNameLabel.Location = new System.Drawing.Point(154, 36);
+            this.ChannelNameLabel.Location = new System.Drawing.Point(154, 37);
             this.ChannelNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ChannelNameLabel.Name = "ChannelNameLabel";
             this.ChannelNameLabel.Size = new System.Drawing.Size(105, 30);
@@ -90,8 +90,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(413, 441);
             this.Controls.Add(this.ChannelNameLabel);
-            this.Controls.Add(this.ChannelNameArea);
             this.Controls.Add(this.PlayButton);
+            this.Controls.Add(this.ChannelNameArea);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
@@ -99,8 +99,8 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Zin Radio Desktop 2021 Beta (.NET 5)";
-            this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ChannelNameArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

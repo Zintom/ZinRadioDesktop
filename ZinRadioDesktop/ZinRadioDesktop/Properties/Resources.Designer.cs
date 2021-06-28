@@ -63,6 +63,26 @@ namespace ZinRadioDesktop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap media_pause_8x {
+            get {
+                object obj = ResourceManager.GetObject("media_pause_8x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap media_play_8x {
+            get {
+                object obj = ResourceManager.GetObject("media_play_8x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause_dark {
             get {
                 object obj = ResourceManager.GetObject("pause_dark", resourceCulture);

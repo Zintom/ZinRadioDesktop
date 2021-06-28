@@ -5,6 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using ZinRadioDesktop.Controls;
 
 namespace ZinRadioDesktop
 {
@@ -15,6 +16,7 @@ namespace ZinRadioDesktop
 
     public partial class MainForm : Form, IDisplayCurrentStation
     {
+        AudioVisualizerControl _audioVisualizerControl;
         public ChangeStation _changeStationScreen;
         public string Theme { get; set; } = "Light";
 
@@ -24,6 +26,12 @@ namespace ZinRadioDesktop
         public MainForm()
         {
             InitializeComponent();
+
+            _audioVisualizerControl = new AudioVisualizerControl();
+            _audioVisualizerControl.Top = ChannelNameArea.Bottom;
+            _audioVisualizerControl.Width = ClientSize.Width;
+            _audioVisualizerControl.Height = ClientSize.Height - ChannelNameArea.Bottom;
+            Controls.Add(_audioVisualizerControl);
 
             RadioStationLogo = new RadioAnimator(BackColor);
             RadioStationLogo.Location = new Point(ClientSize.Width / 2 - RadioStationLogo.Width / 2, ClientSize.Height / 2 - RadioStationLogo.Height / 2);
@@ -35,7 +43,7 @@ namespace ZinRadioDesktop
         }
 
         [MemberNotNull(nameof(MainMenuBarControl))]
-        public void SetupMenuStrip()
+        private void SetupMenuStrip()
         {
             MainMenuBarControl = new ZinMenuBarControl();
             MainMenuBarControl.Width = this.ClientSize.Width;
@@ -77,7 +85,7 @@ namespace ZinRadioDesktop
 
         private readonly object _windowEnlargementLock = new();
 
-        public void EnlargeWindow()
+        private void EnlargeWindow()
         {
             WindowOrchestrator.AnimateOpacity(this, 0, new Action(() =>
             {
@@ -94,7 +102,7 @@ namespace ZinRadioDesktop
             }), _windowEnlargementLock);
         }
 
-        public void ShrinkWindow()
+        private void ShrinkWindow()
         {
             WindowOrchestrator.AnimateOpacity(this, 0, new Action(() =>
             {
@@ -115,14 +123,14 @@ namespace ZinRadioDesktop
         {
             if (WebAudioPlayer.Instance.AudioPlaybackState == WebAudioPlayer.PlaybackState.Playing)
             {
-                await WebAudioPlayer.Instance.Pause();
+                await WebAudioPlayer.Instance.PauseAsync();
             }
             else if (WebAudioPlayer.Instance.AudioPlaybackState == WebAudioPlayer.PlaybackState.Paused)
             {
-                await WebAudioPlayer.Instance.Resume();
+                await WebAudioPlayer.Instance.ResumeAsync();
             }
 
-            AutoUpdateThemedControls();
+            UpdateThemedControls(WebAudioPlayer.Instance.AudioPlaybackState == WebAudioPlayer.PlaybackState.Playing);
         }
 
         private readonly AsyncLock _showStationLocker = new();
@@ -175,38 +183,15 @@ namespace ZinRadioDesktop
 
         public void UpdateCurrentStation(RadioStation station)
         {
-            UpdateTitleText(station.Name);
             RadioStationLogo.Start();
+            UpdateTitleText(station.Name);
             UpdateThemedControls(true);
         }
 
-        public void UpdateTitleText(string text)
+        private void UpdateTitleText(string text)
         {
             ChannelNameLabel.Text = text;
             ChannelNameLabel.Left = ChannelNameArea.Width / 2 - ChannelNameLabel.Width / 2;
-        }
-
-        /// <summary>
-        /// Updates all the Colors for the Themed Controls
-        /// </summary>
-        public void AutoUpdateThemedControls()
-        {
-            if (WebAudioPlayer.Instance.AudioPlaybackState == WebAudioPlayer.PlaybackState.Playing)
-            {
-                RadioStationLogo.Start();
-                if (Theme == "Light")
-                    PlayButton.BackgroundImage = Properties.Resources.pause_dark;
-                else if (Theme == "Dark")
-                    PlayButton.BackgroundImage = Properties.Resources.pause_light;
-            }
-            else
-            {
-                RadioStationLogo.Stop();
-                if (Theme == "Light")
-                    PlayButton.BackgroundImage = Properties.Resources.play_dark;
-                else if (Theme == "Dark")
-                    PlayButton.BackgroundImage = Properties.Resources.play_light;
-            }
         }
 
         /// <summary>
@@ -218,24 +203,18 @@ namespace ZinRadioDesktop
             {
                 RadioStationLogo.Start();
                 if (Theme == "Light")
-                    PlayButton.BackgroundImage = Properties.Resources.pause_dark;
+                    PlayButton.BackgroundImage = Properties.Resources.media_pause_8x;
                 else if (Theme == "Dark")
-                    PlayButton.BackgroundImage = Properties.Resources.pause_light;
+                    PlayButton.BackgroundImage = Properties.Resources.media_pause_8x;
             }
             else
             {
                 RadioStationLogo.Stop();
                 if (Theme == "Light")
-                    PlayButton.BackgroundImage = Properties.Resources.play_dark;
+                    PlayButton.BackgroundImage = Properties.Resources.media_play_8x;
                 else if (Theme == "Dark")
-                    PlayButton.BackgroundImage = Properties.Resources.play_light;
+                    PlayButton.BackgroundImage = Properties.Resources.media_play_8x;
             }
-        }
-
-        private void MainForm_Deactivate(object sender, EventArgs e)
-        {
-            RadioStationLogo.Select();
-            RadioStationLogo.Focus();
         }
 
         //private void MainForm_Move(object sender, EventArgs e)
@@ -250,6 +229,11 @@ namespace ZinRadioDesktop
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Process.GetCurrentProcess().Kill();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

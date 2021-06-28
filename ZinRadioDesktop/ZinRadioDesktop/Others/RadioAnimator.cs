@@ -29,7 +29,7 @@ namespace ZinRadioDesktop
             this.Size = new Size(128, 128);
             this.Anchor = AnchorStyles.None;
 
-            buffer = Properties.Resources.Radio_128_animation_2_dark;
+            buffer = Properties.Resources.Radio_128_dark;
             AnimationSync.Tick += AnimationSync_Tick;
             AnimationSync.Interval = 1000;
 

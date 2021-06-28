@@ -32,8 +32,8 @@
             this.MediaURL = new System.Windows.Forms.TextBox();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.title = new ZinRadioDesktop.TransparentLabel();
-            this.stationListView = new ZinRadioDesktop.ZinListView();
+            this.title = new ZinRadioDesktop.Controls.TransparentLabel();
+            this.stationListView = new ZinRadioDesktop.Controls.ZinListView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,8 +117,8 @@
             this.stationListView.Size = new System.Drawing.Size(384, 516);
             this.stationListView.TabIndex = 2;
             this.stationListView.Text = "zinListView1";
-            this.stationListView.DrawItem += new ZinRadioDesktop.ZinListView.DrawItemEvent(this.StationListView_DrawItem);
-            this.stationListView.ItemClicked += new ZinRadioDesktop.ZinListView.ItemClickedEvent(this.StationListView_ItemClicked);
+            this.stationListView.DrawItem += new ZinRadioDesktop.Controls.ZinListView.DrawItemEvent(this.StationListView_DrawItem);
+            this.stationListView.ItemClicked += new ZinRadioDesktop.Controls.ZinListView.ItemClickedEvent(this.StationListView_ItemClicked);
             // 
             // ChangeStation
             // 
@@ -154,8 +154,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox MediaURL;
-        private TransparentLabel title;
-        private ZinListView stationListView;
+        private ZinRadioDesktop.Controls.TransparentLabel title;
+        private ZinRadioDesktop.Controls.ZinListView stationListView;
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

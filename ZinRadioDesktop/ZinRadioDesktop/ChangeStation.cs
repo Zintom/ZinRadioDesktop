@@ -114,8 +114,8 @@ namespace ZinRadioDesktop
 
                 AnimateHide();
 
-                await WebAudioPlayer.Instance.Stop();
-                await WebAudioPlayer.Instance.Play(selected.URL);
+                await WebAudioPlayer.Instance.StopAsync();
+                await WebAudioPlayer.Instance.PlayAsync(selected.URL);
             }
             else
             {

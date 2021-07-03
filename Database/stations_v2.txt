@@ -1,4 +1,5 @@
-talkSport",https://radio.talksport.com/stream",One of the world’s biggest sports radio stations.",f
+Radio Jedynka",http://stream3.polskieradio.pl:8900/;",Broadcasting Latest news, music, culture, science, history. With us you are always up to date",f
+talkSport",https://radio.talksport.com/stream",One of the world’s biggest sports radio stations.",t
 Romney Marsh Radio",https://s3.radio.co/s16964bdb4/listen",Local Station for the Romney Marsh",t
 Slager FM",https://slagerfm.netregator.hu:7813/slagerfm128.mp3",Magyar, 128kbps",t
 Slager FM HQ",https://slagerfm.netregator.hu:7813/slagerfm320.mp3",Magyar, 320kbps",f

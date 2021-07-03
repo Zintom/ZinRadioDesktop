@@ -1,3 +1,5 @@
+Times Radio",https://timesradio.wireless.radio/stream",Latest breaking news, expert analysis and well-informed discussion covering the biggest stories of the day.",f
+talkRADIO",https://radio.talkradio.co.uk/stream",The UK's fastest growing speech station and the home of common sense.",t
 Polskie Radio Jedynka",http://stream3.polskieradio.pl:8900/;",Broadcasting Latest news, music, culture, science, history. With us you are always up to date",f
 talkSport",https://radio.talksport.com/stream",One of the world’s biggest sports radio stations.",t
 Romney Marsh Radio",https://s3.radio.co/s16964bdb4/listen",Local Station for the Romney Marsh",t
@@ -89,8 +91,8 @@ BBC Three Counties Radio",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lr3cr_mf_
 BBC Wiltshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwilts_mf_p?s=1477777146&e=1477791546&h=40c2319b151e6c73c184672a56547ebf",Swindon - Local service",f
 BBC WM 95.6",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwm_mf_p?s=1477776903&e=1477791303&h=9b057df1a15c0f006f1b846392b42366",Birmingham - Local service",f
 BBC Radio York ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lryork_mf_p?s=1477776949&e=1477791349&h=ea0b3cf1c1909dc2bf39a84aaf8ee53e",York - Local service",f
-BBC Radio Cymru",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_cymru_mf_p?s=1477776949&e=1477791349&h=419b28ab4da51b1d5a555cc21926f19e",Cardiff - Welsh programming",f
-BBC Radio Scotland",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_scotlandfm_mf_p",Glasgow - Regional programming",f
+BBC Radio Cymru",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_cymru",Cardiff - Welsh programming",f
+BBC Radio Scotland",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_scotland_fm",Glasgow - Regional programming",f
 BBC Radio nan Gaidheal",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_nangaidheal_mf_p",Stornoway - Gaelic service",f
 BBC Radio Ulster",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_ulster_mf_p?s=1477777147&e=1477791547&h=584994d697a593cf2a22585f0e0f3b05",Belfast - Regional programming",f
 BBC Radio Foyle",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_foyle_mf_p?s=1477777147&e=1477791547&h=14d6478019bb52ebba0285f2f3a6710d",Londonderry - Local service",f

@@ -49,8 +49,8 @@ Heart 90's",https://media-ssl.musicradio.com/Heart90s",UK National - 90's tracks
 Heart 80's",https://media-ssl.musicradio.com/Heart80s",UK National - 80's tracks",f
 Heart 70's",https://media-ssl.musicradio.com/Heart70s",UK National - 70's tracks",f
 Heart Dance",https://media-ssl.musicradio.com/HeartDance",UK National - Dance Tracks",f
-BBC Asian Network",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p",Birmingham - Asian programming",f
-BBC World Service",http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",London - International news/features",f
+BBC Asian Network",https://stream.live.vc.bbcmedia.co.uk/bbc_asian_network",Birmingham - Asian programming",f
+BBC World Service",https://stream.live.vc.bbcmedia.co.uk/bbc_world_service",London - International news/features",f
 BBC Radio Berkshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrberk_mf_p?s=1477777143&e=1477791543&h=79e634574503e6c955b379753a48b649",Reading - Local service",f
 BBC Radio Bristol",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrbris_mf_p?s=1477777143&e=1477791543&h=db98a02cfe142408c761a22c37310244",Bristol - Local service",f
 BBC Radio Cambridgeshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcambs_mf_p?s=1477776899&e=1477791299&h=fcb2e3ef94d09bd8b7c328e1a39f6e60",Cambridge - Local service",f

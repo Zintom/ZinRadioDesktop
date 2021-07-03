@@ -103,7 +103,16 @@ BBC Radio Wales",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_walesmw_mf_p",Card
 3TFM ",http://149.255.59.162:8042/",Saltcoats - Community radio",f
 10Radio ",http://live.canstream.co.uk:8000/10radio.mp3",Wiveliscombe - Community radio",f
 Abbey104",http://5.152.208.98:8030/",Sherborne - Community radio",f
-Absolute Radio",http://mp3-ar-32.timlradio.co.uk/",London - Hot Adult Contemporary",f
+Absolute Radio",https://stream-ar.planetradio.co.uk/absoluteradiohigh.aac",Real music matters.",f
+Absolute Radio Classic Rock",https://stream-ar.planetradio.co.uk/absoluteclassicrockhigh.aac",Rock's greatest hits.",f
+Absolute Radio Country",https://stream-ar.planetradio.co.uk/absolutecountryhigh.aac",Where Real Music Matters.",f
+Absolute Radio 20's",https://stream-mz.planetradio.co.uk/webcast3high.aac",New Music Matters.",f
+Absolute Radio 10's",https://stream-ar.planetradio.co.uk/absolute10shigh.aac",The biggest songs from the last decade.",f
+Absolute Radio 00's",https://stream-ar.planetradio.co.uk/absolute00shigh.aac",The UK's only 00s radio station.",f
+Absolute Radio 90's",https://stream-ar.planetradio.co.uk/absolute90shigh.aac",The UK's 90s radio station.",f
+Absolute Radio 80's",https://stream-ar.planetradio.co.uk/absolute80shigh.aac",The UK's 80s radio station.",f
+Absolute Radio 70's",https://stream-ar.planetradio.co.uk/absolute70shigh.aac",The UK's 70s radio station.",f
+Absolute Radio 60's",https://stream-ar.planetradio.co.uk/absolute60shigh.aac",The UK's 60s radio station.",f
 107.8 Academy FM ",http://37.187.93.104:8097/stream",Ramsgate - Community radio",f
 105.9 Academy FM ",http://s3.xrad.io:8080/",Folkestone - Community radio",f
 Ahomka Radio",http://stream2.radiomonitor.com:80/DiamondRadio",London - Ghanaian Programming",f

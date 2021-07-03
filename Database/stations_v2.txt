@@ -1,3 +1,6 @@
+Boom Radio",https://listen-boomradio.sharp-stream.com/65_boom_radio_live_64",Oldies, Easy Listening",f
+Radio Clyde 1",https://stream-al.planetradio.co.uk/clyde1.aac",The Biggest Hits The Biggest Throwbacks",f
+Radio Clyde 2",https://stream-al.planetradio.co.uk/clyde2.aac",The Greatest Hits for Glasgow and The West",f
 Times Radio",https://timesradio.wireless.radio/stream",Latest breaking news, expert analysis and well-informed discussion covering the biggest stories of the day.",f
 talkRADIO",https://radio.talkradio.co.uk/stream",The UK's fastest growing speech station and the home of common sense.",t
 Polskie Radio Jedynka",http://stream3.polskieradio.pl:8900/;",Broadcasting Latest news, music, culture, science, history. With us you are always up to date",f

@@ -103,7 +103,7 @@ BBC Radio Wales",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_walesmw_mf_p",Card
 3TFM ",http://149.255.59.162:8042/",Saltcoats - Community radio",f
 10Radio ",http://live.canstream.co.uk:8000/10radio.mp3",Wiveliscombe - Community radio",f
 Abbey104",http://5.152.208.98:8030/",Sherborne - Community radio",f
-Absolute Radio",https://stream-ar.planetradio.co.uk/absoluteradiohigh.aac",Real music matters.",f
+Absolute Radio",https://stream-ar.planetradio.co.uk/absoluteradiohigh.aac",Real music matters.",t
 Absolute Radio Classic Rock",https://stream-ar.planetradio.co.uk/absoluteclassicrockhigh.aac",Rock's greatest hits.",f
 Absolute Radio Country",https://stream-ar.planetradio.co.uk/absolutecountryhigh.aac",Where Real Music Matters.",f
 Absolute Radio 20's",https://stream-mz.planetradio.co.uk/webcast3high.aac",New Music Matters.",f

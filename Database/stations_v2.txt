@@ -43,6 +43,7 @@ BBC Radio 4",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm",National - 
 BBC Radio 4 Long Wave",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourlw_online_nonuk",National - News/Feature programming",f
 BBC Radio 4 Extra",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_four_extra",National - Comedy/Drama/Features",f
 BBC Radio 5 Live",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_online_nonuk",National - News/Talk/Sport",f
+BBC Radio 5 Live Sports Extra",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_sports_extra",More Live Sport. Pure Live Sport",f
 BBC Radio 6 Music",https://stream.live.vc.bbcmedia.co.uk/bbc_6music",National - Adult Alternative",f
 Capital FM London",http://media-the.musicradio.com:80/CapitalMP3",London - Top 40",t
 Capital XTRA",http://media-the.musicradio.com:80/CapitalXTRANationalMP3",London - RnB/HipHop",f

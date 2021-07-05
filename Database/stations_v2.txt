@@ -1,7 +1,7 @@
 Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f
 Union JACK Radio",https://22343.live.streamtheworld.com/JACK_DAB.mp3",World Music, Comedy",f
 TFM Radio",https://stream-mz.planetradio.co.uk/tfm.aac",The Biggest Hits, The Biggest Throwbacks",f
-Metro FM", https://stream-mz.planetradio.co.uk/metro.aac",The Biggest Hits, The Biggest Throwbacks",f
+Metro Radio", https://stream-mz.planetradio.co.uk/metro.aac",The Biggest Hits, The Biggest Throwbacks",f
 Boom Radio",https://listen-boomradio.sharp-stream.com/65_boom_radio_live_64",Oldies, Easy Listening",f
 Radio Clyde 1",https://stream-al.planetradio.co.uk/clyde1.aac",The Biggest Hits The Biggest Throwbacks",f
 Radio Clyde 2",https://stream-al.planetradio.co.uk/clyde2.aac",The Greatest Hits for Glasgow and The West",f

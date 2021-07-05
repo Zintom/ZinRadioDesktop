@@ -1,5 +1,4 @@
 Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f
-Virgin Radio",https://radio.virginradio.co.uk/stream",Hot Adult Contemporary",f
 Union JACK Radio",https://22343.live.streamtheworld.com/JACK_DAB.mp3",World Music, Comedy",f
 TFM Radio",https://stream-mz.planetradio.co.uk/tfm.aac",The Biggest Hits, The Biggest Throwbacks",f
 Metro FM", https://stream-mz.planetradio.co.uk/metro.aac",The Biggest Hits, The Biggest Throwbacks",f

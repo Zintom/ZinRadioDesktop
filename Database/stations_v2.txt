@@ -1,3 +1,8 @@
+Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f
+Virgin Radio",https://radio.virginradio.co.uk/stream",Hot Adult Contemporary",f
+Union JACK Radio",https://22343.live.streamtheworld.com/JACK_DAB.mp3",World Music, Comedy",f
+TFM Radio",https://stream-mz.planetradio.co.uk/tfm.aac",The Biggest Hits, The Biggest Throwbacks",f
+Metro FM", https://stream-mz.planetradio.co.uk/metro.aac",The Biggest Hits, The Biggest Throwbacks",f
 Boom Radio",https://listen-boomradio.sharp-stream.com/65_boom_radio_live_64",Oldies, Easy Listening",f
 Radio Clyde 1",https://stream-al.planetradio.co.uk/clyde1.aac",The Biggest Hits The Biggest Throwbacks",f
 Radio Clyde 2",https://stream-al.planetradio.co.uk/clyde2.aac",The Greatest Hits for Glasgow and The West",f
@@ -448,7 +453,7 @@ Starpoint Radio",http://stream2.hippynet.co.uk:8084/stream.mp3",Birmingham - Sou
 97.2 Stray FM",http://str1.sad.ukrd.com:80/stray",Harrogate - Current/Classic Hits",f
 Stray FM Dales",http://str1.sad.ukrd.com:80/stray-dales",Skipton - Current/Classic Hits",f
 Streetlife FM ",http://icecast.commedia.org.uk:8000/streetlifefm.mp3",Leyton - Community radio",f
-Sun FM ",http://str1.sad.ukrd.com:80/sun-fm",Sunderland - Current/Classic Hits",f
+Sun FM",https://edge-ads-06-cr.sharp-stream.com/sunfmi.aac",Sunderland - Current/Classic Hits",f
 Sunrise Radio",http://icy-e-01-cr.sharp-stream.com:80/sunrise.mp3",Bradford - Asian programming",f
 Sunshine 855",http://icecast.easystream.co.uk:8000/sunshine855",Ludlow - Classic Hits",f
 Sunshine Radio",http://icecast.easystream.co.uk:8000/herefordFM",Hereford - Classic Hits",f

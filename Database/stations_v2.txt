@@ -1,3 +1,4 @@
+Hallam FM",https://stream-al.planetradio.co.uk/hallam.aac",The Biggest Hits, The Biggest Throwbacks",t
 Greatest Hits Radio",https://stream-mz.planetradio.co.uk/net2national.aac",The Good Times Sound Like This",f
 Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f
 Union JACK Radio",https://22343.live.streamtheworld.com/JACK_DAB.mp3",World Music, Comedy",f

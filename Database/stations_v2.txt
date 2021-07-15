@@ -66,7 +66,7 @@ BBC Radio Cambridgeshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcambs_m
 BBC Radio Cornwall",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcorn_mf_p?s=1477776899&e=1477791299&h=d69e8d6cab71ea6345ca0599f8d96d81",Truro - Local service",f
 BBC Coventry and Warwickshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwmcandw_mf_p?s=1477777143&e=1477791543&h=4d6e06907f870a6c9cc4ba2ba6835415",Coventry - Local service",f
 BBC Radio Cumbria",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcumbria_mf_p?s=1477776908&e=1477791308&h=a2452e727db647917db77f6fd109b3af",Carlisle - Local service",f
-BBC Radio Derby",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrderby_mf_p?s=1477777019&e=1477791419&h=5efdf3b17204c94b5b6e061f6f1fdf7b",Derby - Local service",f
+BBC Radio Derby",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_derby",Derby - Local service",f
 BBC Radio Devon",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrdevon_mf_p?s=1477776946&e=1477791346&h=fe1d2d25dfdb955f6e67233e185143de",Plymouth - Local service",f
 BBC Essex ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lressex_mf_p?s=1477777144&e=1477791544&h=5b87500faa6253835d73b1d25835e33f",Chelmsford - Local service",f
 BBC Radio Gloucestershire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrgloucs_mf_p?s=1477776946&e=1477791346&h=81090e51f5209c8a8682e7ce11cc96a9",Gloucester - Local service",f
@@ -77,7 +77,7 @@ BBC Radio Jersey",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrjersey_mf_p?s=1
 BBC Radio Kent",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrkent_mf_p?s=1477777144&e=1477791544&h=2b63d712b327bb79353e6b8dd510986f",Maidstone - Local service",f
 BBC Radio Lancashire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrlancs_mf_p?s=1477777144&e=1477791544&h=0367f4192eb9902b3664621e57151e4a",Blackburn - Local service",f
 BBC Radio Leeds",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrleeds_mf_p?s=1477777144&e=1477791544&h=b21892ef7727e4f6bee06db90788845b",Leeds - Local service",f
-BBC Radio Leicester",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrleics_mf_p?s=1477777144&e=1477791544&h=ddcb93b789d599d8cd06641c7d116af1",Leicester - Local service",f
+BBC Radio Leicester",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_leicester",Leicester - Local service",f
 BBC Radio Lincolnshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrlincs_mf_p?s=1477776947&e=1477791347&h=fc9e14e978423e04d299f17b7fdc17dc",Lincoln - Local service",f
 BBC London 94.9",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrldn_mf_p?s=1477777145&e=1477791545&h=390c24727cded37609ca05b6c3022f1f",London - Local news/features",f
 BBC Radio Manchester",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrmanc_mf_p?s=1477777145&e=1477791545&h=62934985fa022b8d137799872a080a84",Manchester - Local service",f
@@ -85,7 +85,7 @@ BBC Radio Merseyside",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrmersey_mf_p
 BBC Newcastle",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnewc_mf_p?s=1477777145&e=1477791545&h=e0fd751e69ce9a3de379e51c66a99a52",Newcastle - Local service",f
 BBC Radio Norfolk",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnorfolk_mf_p?s=1477777021&e=1477791421&h=1853701ec5c73362af6d706e33d06291",Norwich - Local service",f
 BBC Radio Northampton",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnthhnts_mf_p?s=1477777145&e=1477791545&h=82bdda793a73579bb5a19dcde92c6a89",Northampton - Local service",f
-BBC Radio Nottingham",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnotts_mf_p?s=1477777145&e=1477791545&h=faeba23107830a621df14ba73759cf16",Nottingham - Local service",f
+BBC Radio Nottingham",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_nottingham",Nottingham - Local service",f
 BBC Radio Oxford",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lroxford_mf_p?s=1477777145&e=1477791545&h=084ccbe45f2f076e46d014cb1c7fddc6",Oxford - Local service",f
 BBC Radio Sheffield",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsheff_mf_p?s=1477776948&e=1477791348&h=55f4a563f808a82164955ddc50ab0c4d",Sheffield - Local service",f
 BBC Radio Shropshire ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrshrops_mf_p?s=1477777146&e=1477791546&h=006f8cad936eeed6a011f65dae8dbdb4",Shrewsbury - Local service",f

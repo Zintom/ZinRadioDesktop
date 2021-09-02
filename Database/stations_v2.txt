@@ -1,4 +1,4 @@
-Made In Kent",https://streaming.broadcastradio.com:11515/creation",The brand new radio station for Kent, Supporting Local Businesses 24/7",t
+Made in Kent",https://streaming.broadcastradio.com:11515/creation",The brand new radio station for Kent, Supporting Local Businesses 24/7",t
 Hallam FM",https://stream-al.planetradio.co.uk/hallam.aac",The Biggest Hits, The Biggest Throwbacks",t
 Greatest Hits Radio",https://stream-mz.planetradio.co.uk/net2national.aac",The Good Times Sound Like This",f
 Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f

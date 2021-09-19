@@ -36,7 +36,7 @@ Classic FM",http://media-the.musicradio.com:80/ClassicFMMP3",London - Classical"
 Bartok Radio",http://stream002.radio.hu/mr3.mp3?1480776714876.mp3",Magyar - Classical, Ebu",f
 Petofi Radio",http://mr-stream.mediaconnect.hu/4738/mr2.mp3",Magyar - Pop, Modern",t
 Kossuth Radio",http://mr-stream.mediaconnect.hu/4736/mr1.mp3",Magyar - Not Applicable",f
-Radio Egy",http://stream4.radio1.hu/mid.mp3",Magyar - Modern, Pop",t
+Radio Egy (Rádió 1)",https://icast.connectmedia.hu/5201/live.mp3",Magyar - Modern, Pop",t
 Scala Radio",https://stream-mz.planetradio.co.uk/scalahigh.aac?direct=true",UK National - Classical Music for Modern Life",f
 West FM",https://stream-mz.planetradio.co.uk/westfm.aac?direct=true",Hot AC",f
 Radio Star Country",http://94.23.62.189:5412",Ireland - Gospel & Country",f

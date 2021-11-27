@@ -19,8 +19,7 @@ RTI Offshore",https://s28.myradiostream.com/18084/;",Retro",f
 Lazer 558",http://listen.radionomy.com/laser558alleuroperadio?type=.mp3",Retro - All Europe Radio",t
 UpdateFitness Radio",https://radio.update-fitness.ch/update",Magyar - Off Air (Not working)",f
 24/7 Dance Mix",http://zinstorm.com/zinradio/custom/zindance.php",Dance Remix 24/7",t
-Retro Radio High",http://stream1.retroradio.hu/high.mp3",Magyar - Retro Tracks 256kbps",f
-Retro Radio",http://stream1.retroradio.hu/mid.mp3",Magyar - Retro Tracks 128kbps",t
+Retro Radio",https://icast.connectmedia.hu/5001/live.mp3",Magyar - Retro Tracks 128kbps",t
 Helikon Radio",http://stream5.radio1.hu/mid.mp3",Magyar - Dance, Drum & Bass",f
 Jazz FM",https://stream-al.planetradio.co.uk/jazzhigh.aac?direct=true",Listen in colour - Jazz, Blues, Soul",f
 Kerrang! Radio",https://stream-al.planetradio.co.uk/kerrang.aac",UK National - Modern Rock, Metal",f

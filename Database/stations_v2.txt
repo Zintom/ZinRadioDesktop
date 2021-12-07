@@ -1,3 +1,4 @@
+CDCR",https://s5.radio.co/saae69a7a4/listen",County Durham Community Radio",f
 Made in Kent",https://streaming.broadcastradio.com:11515/creation",The brand new radio station for Kent, Supporting Local Businesses 24/7",t
 Hallam FM",https://stream-al.planetradio.co.uk/hallam.aac",The Biggest Hits, The Biggest Throwbacks",t
 Greatest Hits Radio",https://stream-mz.planetradio.co.uk/net2national.aac",The Good Times Sound Like This",f
@@ -280,6 +281,7 @@ Heart (Sussex)",http://media-the.musicradio.com:80/HeartSussexMP3",Brighton - Ad
 Heart (Wirral)",http://media-the.musicradio.com:80/HeartWirralMP3",Birkenhead - Adult Contemporary",f
 Heart (Hertfordshire)",http://media-the.musicradio.com:80/HeartWatfordMP3",Watford - Adult Contemporary",f
 Heart (Sussex & Surrey)",http://media-the.musicradio.com:80/HeartCrawleyMP3",Crawley - Adult Contemporary",f
+Heart Xmas",https://media-ssl.musicradio.com/HeartXmas",From classics that get you misty-eyed, to more recent and upbeat Christmas songs, yule be immersed in the best music for this very special season.",t
 Heartland FM",http://rs9.radiostreamer.com:8185/",Pitlochry - Local service",f
 Hermitage FM",http://live.canstream.co.uk:8000/hermitage.mp3",Coalville - Community radio",f
 102.3 HFM",http://icy-e-05-gos.sharp-stream.com:80/harboroughfm.mp3",Market Harborough - Community radio",f

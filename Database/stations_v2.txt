@@ -1,8 +1,9 @@
+Flex FM 101.4",http://142.4.215.64:8116/stream",LONDON AND SURROUNDING COUNTIES. EST. 1992 PAST / PRESENT / FUTURE",f
 Europa Plus Kyiv 107.0 FM",https://s5.radioforge.com:7908/live",Pop, Talk, Top 40, Ukraine",f
 GB News Radio",https://listen-gbnews.sharp-stream.com/gbnews.aac",British, News",f
 CDCR",https://s5.radio.co/saae69a7a4/listen",County Durham Community Radio",f
 Made in Kent",https://streaming.broadcastradio.com:11515/creation",The brand new radio station for Kent, Supporting Local Businesses 24/7",t
-Hallam FM",https://stream-al.planetradio.co.uk/hallam.aac",The Biggest Hits, The Biggest Throwbacks",t
+Hallam FM",https://stream-al.planetradio.co.uk/hallam.aac?direct=true&aw_0_1st.playerid=BMUK_html5",The Biggest Hits, The Biggest Throwbacks",t
 Greatest Hits Radio",https://stream-mz.planetradio.co.uk/net2national.aac",The Good Times Sound Like This",f
 Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f
 Union JACK Radio",https://22343.live.streamtheworld.com/JACK_DAB.mp3",World Music, Comedy",f
@@ -390,7 +391,7 @@ Radio St Austell Bay",http://www.rsab-server.org:8000/live.mp3",St Austell - Com
 Radio Sunlight",http://icecast.commedia.org.uk:8000/sunlight.mp3",Gillingham - Community radio",f
 Radio Teesdale",http://icecast.commedia.org.uk:8000/radioteesdale.mp3",Barnard Castle - Community radio",f
 Radio Tircoed",http://78.129.143.9:8060/",Swansea - Community radio",f
-Radio Verulam",http://stream1.myradioapps.com:80/radioverulam",St.Albans - Community radio",f
+Radio Verulam",https://stream4.hippynet.co.uk:8012/stream",St.Albans - Community radio",f
 Radio Yorkshire",http://stream1.myradioapps.com:80/radio_yorkshire",Leeds - Adult Contemporary/Sport",f
 Radio Warrington",http://stream.dnsgb.net:8002/",Warrington - Community radio",f
 Radio Wave 96.5",http://stream2.radiomonitor.com:80/Wave-Blackpool",Blackpool - Adult Contemporary",f

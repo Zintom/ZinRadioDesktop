@@ -1,4 +1,4 @@
-Hoxton Radio",https://cp10.shoutcheap.com:2199/tunein/hoxtonra.pls",Local radio for East London",f
+Hoxton Radio",https://cp10.shoutcheap.com:2199/tunein/hoxtonra.asx",Local radio for East London",f
 Flex FM 101.4",http://142.4.215.64:8116/stream",LONDON AND SURROUNDING COUNTIES. EST. 1992 PAST / PRESENT / FUTURE",f
 Europa Plus Kyiv 107.0 FM",https://s5.radioforge.com:7908/live",Pop, Talk, Top 40, Ukraine",f
 GB News Radio",https://listen-gbnews.sharp-stream.com/gbnews.aac",British, News",f

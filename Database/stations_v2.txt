@@ -27,8 +27,8 @@ Retro Radio",https://icast.connectmedia.hu/5001/live.mp3",Magyar - Retro Tracks 
 Helikon Radio",http://stream5.radio1.hu/mid.mp3",Magyar - Dance, Drum & Bass",f
 Jazz FM",https://stream-al.planetradio.co.uk/jazzhigh.aac?direct=true",Listen in colour - Jazz, Blues, Soul",f
 Kerrang! Radio",https://stream-al.planetradio.co.uk/kerrang.aac",UK National - Modern Rock, Metal",f
-Kiss",https://stream-kiss.planetradio.co.uk/kissnational.aac?direct=true",UK National - Dance, R&B, Hip Hop",f
-Kisstory",https://stream-kiss.planetradio.co.uk/kisstory.aac?direct=true",UK National - Old Skool, Dance Anthems",f
+Kiss",https://tx.planetradio.co.uk/http_live_bauer.php?i=kissnational.mp3&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Dance, R&B, Hip Hop",f
+Kisstory",https://tx.planetradio.co.uk/http_live_bauer.php?i=kisstory.mp3&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Old Skool, Dance Anthems",f
 Magic",https://stream-mz.planetradio.co.uk/magicnational.aac?direct=true",UK National - Soft Rock",f
 Part FM",http://87.229.53.9:9000/;stream.mp3",Decommissioned, see Next FM",f
 Next FM",https://stream.nextfm.hu/radio/8000/nextfmhu.mp3",The new generation of radio - Magyar",t

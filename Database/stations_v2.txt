@@ -4,14 +4,14 @@ GB News Radio",https://listen-gbnews.sharp-stream.com/gbnews.aac",British, News"
 CDCR",https://s5.radio.co/saae69a7a4/listen",County Durham Community Radio",f
 Made in Kent",https://streaming.broadcastradio.com:11515/creation",The brand new radio station for Kent, Supporting Local Businesses 24/7",t
 Hallam FM",https://tx.planetradio.co.uk/http_live_bauer.php?i=hallam.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The Biggest Hits, The Biggest Throwbacks",t
-Greatest Hits Radio",https://stream-mz.planetradio.co.uk/net2national.aac",The Good Times Sound Like This",f
+Greatest Hits Radio",http://tx.planetradio.co.uk/http_live_bauer.php?i=net2national.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The Good Times Sound Like This",f
 Virgin Radio Anthems",https://radio.virginradio.co.uk/stream-anthems",Anthems, Classics etc",f
 Union JACK Radio",https://22343.live.streamtheworld.com/JACK_DAB.mp3",World Music, Comedy",f
-TFM Radio",https://stream-mz.planetradio.co.uk/tfm.aac",The Biggest Hits, The Biggest Throwbacks",f
-Metro Radio", https://stream-mz.planetradio.co.uk/metro.aac",The Biggest Hits, The Biggest Throwbacks",f
+TFM Radio",http://tx.planetradio.co.uk/http_live_bauer.php?i=tfm.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The Biggest Hits, The Biggest Throwbacks",f
+Metro Radio",http://tx.planetradio.co.uk/http_live_bauer.php?i=metro.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The Biggest Hits, The Biggest Throwbacks",f
 Boom Radio",https://listen-boomradio.sharp-stream.com/65_boom_radio_live_64",Oldies, Easy Listening",f
-Radio Clyde 1",https://stream-al.planetradio.co.uk/clyde1.aac",The Biggest Hits The Biggest Throwbacks",f
-Radio Clyde 2",https://stream-al.planetradio.co.uk/clyde2.aac",The Greatest Hits for Glasgow and The West",f
+Radio Clyde 1",http://tx.planetradio.co.uk/http_live_bauer.php?i=clyde1.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The Biggest Hits The Biggest Throwbacks",f
+Radio Clyde 2",http://tx.planetradio.co.uk/http_live_bauer.php?i=clyde2.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The Greatest Hits for Glasgow and The West",f
 Times Radio",https://timesradio.wireless.radio/stream",Latest breaking news, expert analysis and well-informed discussion covering the biggest stories of the day.",f
 talkRADIO",https://radio.talkradio.co.uk/stream",The UK's fastest growing speech station and the home of common sense.",t
 Polskie Radio Jedynka",http://stream3.polskieradio.pl:8900/;",Broadcasting Latest news, music, culture, science, history. With us you are always up to date",f
@@ -25,14 +25,14 @@ UpdateFitness Radio",https://radio.update-fitness.ch/update",Magyar - Off Air (N
 24/7 Dance Mix",http://zinstorm.com/zinradio/custom/zindance.php",Dance Remix 24/7",t
 Retro Radio",https://icast.connectmedia.hu/5001/live.mp3",Magyar - Retro Tracks 128kbps",t
 Helikon Radio",http://stream5.radio1.hu/mid.mp3",Magyar - Dance, Drum & Bass",f
-Jazz FM",https://stream-al.planetradio.co.uk/jazzhigh.aac?direct=true",Listen in colour - Jazz, Blues, Soul",f
-Kerrang! Radio",https://stream-al.planetradio.co.uk/kerrang.aac",UK National - Modern Rock, Metal",f
+Jazz FM",http://tx.planetradio.co.uk/http_live_bauer.php?i=jazzhigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",Listen in colour - Jazz, Blues, Soul",f
+Kerrang! Radio",http://tx.planetradio.co.uk/http_live_bauer.php?i=kerrang.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Modern Rock, Metal",f
 Kiss",https://tx.planetradio.co.uk/http_live_bauer.php?i=kissnational.mp3&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Dance, R&B, Hip Hop",f
 Kisstory",https://tx.planetradio.co.uk/http_live_bauer.php?i=kisstory.mp3&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Old Skool, Dance Anthems",f
-Magic",https://stream-mz.planetradio.co.uk/magicnational.aac?direct=true",UK National - Soft Rock",f
+Magic",http://tx.planetradio.co.uk/http_live_bauer.php?i=magicnational.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Soft Rock",f
 Part FM",http://87.229.53.9:9000/;stream.mp3",Decommissioned, see Next FM",f
 Next FM",https://stream.nextfm.hu/radio/8000/nextfmhu.mp3",The new generation of radio - Magyar",t
-Pirate FM East",https://stream-mz.planetradio.co.uk/net1cornwall.aac?direct=true",UK National - Pop, A.C",f
+Pirate FM East",http://tx.planetradio.co.uk/http_live_bauer.php?i=net1cornwall.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Pop, A.C",f
 The Hits Radio",http://icy-e-bl-08-boh.sharp-stream.com:8000/hits.mp3",UK National - Pop, Modern",f
 Demon FM",http://live.demonfm.co.uk:8000/demon320",Leicester - Community radio",f
 Classic FM",http://media-the.musicradio.com:80/ClassicFMMP3",London - Classical",f
@@ -40,8 +40,8 @@ Bartok Radio",http://stream002.radio.hu/mr3.mp3?1480776714876.mp3",Magyar - Clas
 Petofi Radio",http://mr-stream.mediaconnect.hu/4738/mr2.mp3",Magyar - Pop, Modern",t
 Kossuth Radio",http://mr-stream.mediaconnect.hu/4736/mr1.mp3",Magyar - Not Applicable",f
 Radio Egy (Rádió 1)",https://icast.connectmedia.hu/5201/live.mp3",Magyar - Modern, Pop",t
-Scala Radio",https://stream-mz.planetradio.co.uk/scalahigh.aac?direct=true",UK National - Classical Music for Modern Life",f
-West FM",https://stream-mz.planetradio.co.uk/westfm.aac?direct=true",Hot AC",f
+Scala Radio",http://tx.planetradio.co.uk/http_live_bauer.php?i=scalahigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",UK National - Classical Music for Modern Life",f
+West FM",http://tx.planetradio.co.uk/http_live_bauer.php?i=westfm.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",Hot AC",f
 Radio Star Country",http://94.23.62.189:5412",Ireland - Gospel & Country",f
 Bob's Ska Radio",http://51.255.235.165:5528/stream",Non-stop Ska, Reggae, Rocksteady, 2Tone and Punk",f
 BBC Radio 1",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_one",National - Top 40/Dance",f
@@ -117,8 +117,8 @@ BBC Radio Wales",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_walesmw_mf_p",Card
 10Radio ",http://live.canstream.co.uk:8000/10radio.mp3",Wiveliscombe - Community radio",f
 Abbey104",http://5.152.208.98:8030/",Sherborne - Community radio",f
 Absolute Radio",http://tx.planetradio.co.uk/http_live_bauer.php?i=absoluteradiohigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",Real music matters.",t
-Absolute Radio Classic Rock",http://ais.absoluteradio.co.uk/absoluteclassicrockhigh.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein&aw_0_1st.skey=1657616174",Rock's greatest hits.",f
-Absolute Radio Country",http://ais.absoluteradio.co.uk/absolutecountryhigh.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein&aw_0_1st.skey=1657616174",Where Real Music Matters.",f
+Absolute Radio Classic Rock",http://tx.planetradio.co.uk/http_live_bauer.php?i=absoluteclassicrockhigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",Rock's greatest hits.",f
+Absolute Radio Country",http://tx.planetradio.co.uk/http_live_bauer.php?i=absolutecountryhigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",Where Real Music Matters.",f
 Absolute Radio 20's",https://tx.planetradio.co.uk/http_live_bauer.php?i=webcast3high.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",New Music Matters.",f
 Absolute Radio 10's",http://tx.planetradio.co.uk/http_live_bauer.php?i=absolute10shigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The biggest songs from the last decade.",f
 Absolute Radio 00's",http://tx.planetradio.co.uk/http_live_bauer.php?i=absolute00shigh.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",The UK's only 00s radio station.",f
@@ -357,7 +357,6 @@ Peak FM",http://stream2.radiomonitor.com:80/Peak",Chesterfield - Current/Classic
 Penwith Radio",http://50.7.77.178:8414/live",Penzance - Community radio",f
 Phoenix FM",http://51.255.83.127:1907/Live",Brentwood - Community radio",f
 Phonic FM",http://109.200.2.91:8004/",Exeter - Community radio",f
-Pirate FM",https://stream-mz.planetradio.co.uk/net1cornwall.aac?direct=true",Redruth - Top 40",f
 Planet Rock",https://tx.planetradio.co.uk/http_live_bauer.php?i=planetrock.aac&awparams=loggedin:false&amsparams=playerid:BMUK_tunein",Digital Network - Classic Rock",f
 Point FM",http://stream.pointfm.co.uk:1031/",Rhyl - Community radio",f
 Polskie Radio Londyn",http://149.202.75.191:8128/",London - Top 40/Dance for Polish <br />community",f

@@ -1,3 +1,4 @@
+Tring Radio",https://playoutonestreaming.com/proxy/tring?mp=/stream",Tring Radio is the fastest expanding volunteer run non-profit based radio station in the South East of England - initially setup in light of the Coronavirus Epidemic to bring News Information and Music to our local residents.",f
 RTE Radio 1 (RTE 1)",https://www.liveradio.es/http://icecast.rte.ie/ieradio1",Folk, News, Pop",f
 Radio Sputnik NL",https://radiosputnik.nl:8443",24/7 Underground House and Techno",f
 Radio Paradise Main Mix [FLAC]",https://stream.radioparadise.com/flac",radioparadise.com",t

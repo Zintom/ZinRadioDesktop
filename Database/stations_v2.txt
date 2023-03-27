@@ -77,7 +77,7 @@ BBC Radio Bristol",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrbris_mf_p?s=14
 BBC Radio Cambridgeshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcambs_mf_p?s=1477776899&e=1477791299&h=fcb2e3ef94d09bd8b7c328e1a39f6e60",Cambridge - Local service",f
 BBC Radio Cornwall",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcorn_mf_p?s=1477776899&e=1477791299&h=d69e8d6cab71ea6345ca0599f8d96d81",Truro - Local service",f
 BBC Coventry and Warwickshire",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwmcandw_mf_p?s=1477777143&e=1477791543&h=4d6e06907f870a6c9cc4ba2ba6835415",Coventry - Local service",f
-BBC Radio Cumbria",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcumbria_mf_p?s=1477776908&e=1477791308&h=a2452e727db647917db77f6fd109b3af",Carlisle - Local service",f
+BBC Radio Cumbria",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_cumbria",Carlisle - Local service",f
 BBC Radio Derby",https://stream.live.vc.bbcmedia.co.uk/bbc_radio_derby",Derby - Local service",f
 BBC Radio Devon",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrdevon_mf_p?s=1477776946&e=1477791346&h=fe1d2d25dfdb955f6e67233e185143de",Plymouth - Local service",f
 BBC Essex ",http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lressex_mf_p?s=1477777144&e=1477791544&h=5b87500faa6253835d73b1d25835e33f",Chelmsford - Local service",f
